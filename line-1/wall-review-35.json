@@ -1,0 +1,44 @@
+{
+  "record": 35,
+  "ancestor_sha256": "36cb5f507370975dbf261dbef71560cf550ff5aa05af904dbe490c7500496fe1",
+  "output_sha256": "570456ece32010c9f1de7286dc4999b9b3d2aee19ab0adcfbb67bcdb7db1c07e",
+  "wall": {
+    "paths": [
+      "artifacts/line-1/wall.png",
+      "artifacts/line-1/wall-v15.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB"
+  },
+  "thumbnail": {
+    "path": "dist/line-1/35.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 76272
+  },
+  "generation": {
+    "tool": "image_gen.imagegen",
+    "motif": "One open earth-pigment seedpod with exactly three charcoal seeds on a white transfer carrier.",
+    "carrier_sha256": "5cd02b17de609640eb06b739ba100348610f0f92c85055c689441dc17947f811",
+    "carrier_retained": false
+  },
+  "changed_pixels": 2286,
+  "unchanged_pixels": 1570230,
+  "changed_bounds_inclusive": [
+    417,
+    210,
+    527,
+    261
+  ],
+  "all_pixels_outside_patch_identical": true,
+  "protected_dark_fissures": true,
+  "visual_review": "Inspected full final PNG and decoded 512-pixel JPEG. New worn ochre seedpod contains exactly three charcoal seeds. Pepe retains broad mouth and heavy-lidded eyes. Each existing hand has five digits (four fingers and one thumb); no hands or handprints added. Earlier marks, rock, cracks, framing, light and water remain intact. No letters, numbers, captions, logos, borders, signatures, real people or political/hateful symbols observed.",
+  "unmet_visual_requirements": [],
+  "structural_inspection": {
+    "PNG": "valid, 1254 x 1254, RGB",
+    "JPEG": "valid, 512 x 512, 76272 bytes"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Three Seeds, Counted",
+  "image": "https://api.imd.fun/artifacts/570456ece32010c9f1de7286dc4999b9b3d2aee19ab0adcfbb67bcdb7db1c07e",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 35
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Snapshot integer decoder"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe opens a seedpod and counts exactly what it holds."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "portable live Ethereum JSON-RPC snapshots"
+    }
+  ]
+}

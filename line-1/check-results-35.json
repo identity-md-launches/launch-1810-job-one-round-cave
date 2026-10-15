@@ -1,0 +1,78 @@
+{
+  "checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-1/tools/snapshot-integer",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_cli_rejects_without_partial_output (test_decode.DecodeTests.test_cli_rejects_without_partial_output) ... ok\ntest_cli_requires_explicit_encoding (test_decode.DecodeTests.test_cli_requires_explicit_encoding) ... ok\ntest_cli_success_and_no_file_changes (test_decode.DecodeTests.test_cli_success_and_no_file_changes) ... ok\ntest_consistently_resealed_evidence_is_not_proof (test_decode.DecodeTests.test_consistently_resealed_evidence_is_not_proof) ... ok\ntest_exact_scale (test_decode.DecodeTests.test_exact_scale) ... ok\ntest_fresh_saved_zto_offline (test_decode.DecodeTests.test_fresh_saved_zto_offline) ... ok\ntest_invalid_scale (test_decode.DecodeTests.test_invalid_scale) ... ok\ntest_nonstring_selected_values (test_decode.DecodeTests.test_nonstring_selected_values) ... ok\ntest_quantity_boundaries (test_decode.DecodeTests.test_quantity_boundaries) ... ok\ntest_quantity_rejects_noncanonical (test_decode.DecodeTests.test_quantity_rejects_noncanonical) ... ok\ntest_real_block_quantity (test_decode.DecodeTests.test_real_block_quantity) ... ok\ntest_real_zto_offline (test_decode.DecodeTests.test_real_zto_offline) ... ok\ntest_signed_boundaries (test_decode.DecodeTests.test_signed_boundaries) ... ok\ntest_tampered_strict_json_and_symlinks (test_decode.DecodeTests.test_tampered_strict_json_and_symlinks) ... ok\ntest_unsigned_and_signed_are_explicit (test_decode.DecodeTests.test_unsigned_and_signed_are_explicit) ... ok\ntest_word_width_and_syntax (test_decode.DecodeTests.test_word_width_and_syntax) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.018s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-1/tools/snapshot-select",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_bad_array_indexes (test_select.SelectionTests.test_bad_array_indexes) ... ok\ntest_bad_pointer (test_select.SelectionTests.test_bad_pointer) ... ok\ntest_cli (test_select.SelectionTests.test_cli) ... ok\ntest_depth (test_select.SelectionTests.test_depth) ... ok\ntest_input_immutable (test_select.SelectionTests.test_input_immutable) ... ok\ntest_missing_vs_null (test_select.SelectionTests.test_missing_vs_null) ... ok\ntest_numeric_object_key (test_select.SelectionTests.test_numeric_object_key) ... ok\ntest_output_limit (test_select.SelectionTests.test_output_limit) ... ok\ntest_real_block (test_select.SelectionTests.test_real_block) ... ok\ntest_real_zto (test_select.SelectionTests.test_real_zto) ... ok\ntest_rfc_escapes_and_empty_keys (test_select.SelectionTests.test_rfc_escapes_and_empty_keys) ... ok\ntest_root (test_select.SelectionTests.test_root) ... ok\ntest_tampered_and_error_snapshot (test_select.SelectionTests.test_tampered_and_error_snapshot) ... ok\ntest_types (test_select.SelectionTests.test_types) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.012s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/snapshot-integer/decode.py",
+        "line-1/tools/snapshot-integer/live-zto.json",
+        "--encoding",
+        "uint256",
+        "--decimals",
+        "18"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"schema\":\"line1-snapshot-integer-v1\",\"selection\":{\"schema\":\"line1-snapshot-selection-v1\",\"request\":{\"id\":1,\"jsonrpc\":\"2.0\",\"method\":\"eth_call\",\"params\":[{\"data\":\"0x18160ddd\",\"to\":\"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\"},\"latest\"]},\"rpc_url\":\"https://ethereum-rpc.publicnode.com\",\"captured_at_utc\":\"2026-10-15T04:02:16.159255+00:00\",\"response_sha256\":\"c246b76a086839ea8ee44de616317a5a95acb90bda1a5186275df5d2a765764e\",\"result_pointer\":\"\",\"value_type\":\"string\",\"value\":\"0x0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000\",\"meaning\":\"Selected saved provider response; not a state proof or freshness check.\"},\"decoded\":{\"encoding\":\"uint256\",\"raw_decimal\":\"1000000000000000000000000000\",\"decimals\":18,\"fixed_decimal\":\"1000000000.000000000000000000\"},\"meaning\":\"Caller-selected integer encoding and scale; provider observation, not ABI verification, units, state proof or freshness.\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-1/tools/snapshot-integer/decode.py",
+        "line-1/tools/snapshot-select/live-block.json",
+        "--pointer",
+        "/number",
+        "--encoding",
+        "quantity"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"schema\":\"line1-snapshot-integer-v1\",\"selection\":{\"schema\":\"line1-snapshot-selection-v1\",\"request\":{\"id\":1,\"jsonrpc\":\"2.0\",\"method\":\"eth_getBlockByNumber\",\"params\":[\"finalized\",false]},\"rpc_url\":\"https://ethereum-rpc.publicnode.com\",\"captured_at_utc\":\"2026-10-15T03:02:23.383512+00:00\",\"response_sha256\":\"becb044ed0028494f8ffb233e3d99ae8875934f969fab21c9e4968904e650525\",\"result_pointer\":\"/number\",\"value_type\":\"string\",\"value\":\"0x18fb43a\",\"meaning\":\"Selected saved provider response; not a state proof or freshness check.\"},\"decoded\":{\"encoding\":\"quantity\",\"raw_decimal\":\"26195002\",\"decimals\":0,\"fixed_decimal\":\"26195002\"},\"meaning\":\"Caller-selected integer encoding and scale; provider observation, not ABI verification, units, state proof or freshness.\"}\n",
+      "stderr": ""
+    }
+  ],
+  "tests_passed": 30,
+  "fresh_public_read": "ZTO totalSupply observation retained in tools/snapshot-integer/live-zto.json",
+  "goal_unchanged": true,
+  "older_records_unchanged": true,
+  "record_count": 35,
+  "record_shape_and_hash_valid": true,
+  "new_nonartifact_files_under_100000_bytes": true,
+  "wall_outputs_untracked": true,
+  "unmet_visual_requirements": [],
+  "authority": "Local checks only; not independent certification or chain proof."
+}

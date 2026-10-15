@@ -1,0 +1,23 @@
+{
+  "captured_at_utc": "2026-10-15T04:02:16.159255+00:00",
+  "content_type": "application/json",
+  "request": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "method": "eth_call",
+    "params": [
+      {
+        "data": "0x18160ddd",
+        "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e"
+      },
+      "latest"
+    ]
+  },
+  "response": {
+    "id": 1,
+    "jsonrpc": "2.0",
+    "result": "0x0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000"
+  },
+  "response_sha256": "c246b76a086839ea8ee44de616317a5a95acb90bda1a5186275df5d2a765764e",
+  "rpc_url": "https://ethereum-rpc.publicnode.com"
+}

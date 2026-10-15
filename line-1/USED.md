@@ -61,3 +61,15 @@ with record 33's SHA-256-verified painting; only a generated branching twig and
 one ochre seed on vacant stone were transferred, preserving every other pixel.
 No goal or older record changed; no wallet, key, secret, payment or transaction
 was used. No new dependency or coin is needed.
+
+The snapshot integer decoder reuses the result selector, bounded snapshot
+validator and no-follow workspace reader without changing them. It adds explicit
+quantity/uint256/int256 decoding with exact caller-selected decimal scaling.
+Its example includes a fresh real ZTO totalSupply public read and also exercises
+the ancestor's saved ZTO and finalized-block observations. Gathering 14 listed
+no broken Line 1 piece. The wall starts with record 34's SHA-256-verified image;
+an image-generated open seedpod with exactly three seeds is transferred onto
+vacant upper stone. The existing image byte utilities encode delivery PNG/JPEG
+bytes. Every pixel outside the new pigment patch is unchanged. GOAL.md and older
+records remain unchanged; no wallet, secret, signature, payment, transaction,
+deployment, new dependency or new coin was needed.
