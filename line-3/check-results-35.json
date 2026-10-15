@@ -1,0 +1,41 @@
+{
+  "authority": "Local checks, not independent certification",
+  "newTool": "settlement-order",
+  "suites": [
+    {
+      "command": "python3 -B -m unittest discover -s line-3/tools/settlement-order -p 'test_*.py' -v",
+      "tests": 24,
+      "passed": 24,
+      "failures": 0,
+      "errors": 0
+    },
+    {
+      "command": "python3 -B -m unittest discover -s line-3/tools/settlement-batch -p 'test_*.py' -v",
+      "tests": 21,
+      "passed": 21,
+      "failures": 0,
+      "errors": 0
+    }
+  ],
+  "offlineDemo": {
+    "command": "python3 -B line-3/tools/settlement-order/order.py --demo",
+    "exitCode": 0,
+    "state": "settlement_order_match",
+    "accepted": true
+  },
+  "negativeTrial": {
+    "change": "reverse the required sequence while retaining both valid transactions",
+    "exitCode": 1,
+    "state": "order_review_required",
+    "batchAccepted": true,
+    "accepted": false
+  },
+  "liveRead": {
+    "source": "https://ethereum-rpc.publicnode.com",
+    "sampledHead": 26195457,
+    "acceptedTransactions": 2,
+    "readOnly": true,
+    "evidence": "line-3/tools/settlement-order/live-check.json"
+  },
+  "limitations": "Saved observations are historical provider assertions. No current freshness, consensus proof, application workflow semantics or payment authorization."
+}

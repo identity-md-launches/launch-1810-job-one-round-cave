@@ -1,5 +1,11 @@
 # Line 3 — Stone Witness
 
+Latest piece: [settlement-order](tools/settlement-order/README.md) checks that a
+hash-pinned sequence of Ethereum transactions both settles and occurs in the
+required order. Its standard-library offline demo uses newly retained real ZTO
+observations. Run `python3 -B line-3/tools/settlement-order/order.py --demo`.
+Round 35's wall and local checks are described in [round-35.md](round-35.md).
+
 The first working piece is [settlement-check](tools/settlement-check/README.md): a read-only Ethereum transaction settlement checker, demonstrated on a real ZTO transfer. The one-line goal is in GOAL.md; it is distinct from the Water, Base, and Moss goals read at the start of this round.
 
 ## Wall result and review

@@ -1,0 +1,44 @@
+{
+  "ancestorSha256": "85f1f89bbc57722d8436a6617b58c9f4725043fa10e5300b84e650405da7b803",
+  "ancestorDimensions": [
+    1254,
+    1254
+  ],
+  "wallDimensions": [
+    1254,
+    1254
+  ],
+  "wallFormat": "PNG",
+  "wallMode": "RGB",
+  "wallSha256": "50ba564f4546e7e0c3558e887e870fa89b95a24527c550bd857f7bf34834575f",
+  "generatedDraftSha256": "66a21d15938c7b491802a41fe32edc7ea6d51873f6d4b58816f0050ad3510487",
+  "draftRetained": false,
+  "additionRectangle": [
+    674,
+    408,
+    89,
+    86
+  ],
+  "changedPixels": 1348,
+  "unchangedPixels": 1571168,
+  "allPixelsOutsideAdditionUnchanged": true,
+  "deepCracksProtected": true,
+  "previewDimensions": [
+    512,
+    512
+  ],
+  "previewFormat": "JPEG",
+  "previewBytes": 75881,
+  "previewQuality": 52,
+  "imageTool": "image_gen__imagegen",
+  "prompt": "Two irregular red-ochre stepping stones arranged diagonally, joined by an uneven rising charcoal trail. Isolated worn Lascaux pigment on white. No text, arrows, hands, footprints, digits, logos, numbers, borders or frames.",
+  "reviewStatus": "Full PNG and decoded 512-pixel JPEG visually inspected",
+  "unmetVisualRequirements": [],
+  "visualReview": {
+    "pepe": "Inherited wide mouth and heavy-lidded eyes preserved",
+    "hands": "No new hands or handprints; inherited hands hidden; no visible hand digits to count",
+    "pigments": "Worn ochre and charcoal addition",
+    "prohibitedMarks": "No text, numbers, signatures, logos, watermarks, borders or prohibited symbols observed",
+    "ancestralMarks": "Addition on vacant stone; all older marks retained"
+  }
+}

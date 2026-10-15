@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "recordNumber": 35,
+  "oldRecordsUnchanged": 34,
+  "goalByteForByteUnchanged": true,
+  "allowedPathsOnly": true,
+  "changedSourceFiles": [
+    "line-3/README.md",
+    "line-3/USED.md"
+  ],
+  "newFiles": [
+    "dist/line-3/35.jpg",
+    "dist/line-3/35.json",
+    "line-3/check-results-35.json",
+    "line-3/finish_wall_35.py",
+    "line-3/round-35.md",
+    "line-3/tools/settlement-order/README.md",
+    "line-3/tools/settlement-order/demo-plan.json",
+    "line-3/tools/settlement-order/demo-plan.sha256",
+    "line-3/tools/settlement-order/demo-result.json",
+    "line-3/tools/settlement-order/evidence-1.json",
+    "line-3/tools/settlement-order/evidence-2.json",
+    "line-3/tools/settlement-order/live-check.json",
+    "line-3/tools/settlement-order/order.py",
+    "line-3/tools/settlement-order/test_order.py",
+    "line-3/wall-review-35.json"
+  ],
+  "wall": {
+    "format": "RGB PNG",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "sha256": "50ba564f4546e7e0c3558e887e870fa89b95a24527c550bd857f7bf34834575f",
+    "identicalOutputs": true,
+    "changedPixels": 1348,
+    "unchangedPixels": 1571168,
+    "outsideAdditionExact": true,
+    "protectedDeepCracksExact": true,
+    "untrackedForUploader": true
+  },
+  "preview": {
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 75881
+  },
+  "unmetVisualRequirements": [],
+  "authority": "Local byte and preservation checks; no independent visual certification."
+}

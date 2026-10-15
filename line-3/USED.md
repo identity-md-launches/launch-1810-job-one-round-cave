@@ -356,3 +356,31 @@ PNG paths are identical 1254 × 1254 RGB. Preview 34.jpg is 512 × 512 JPEG,
 no hands or handprints were added, no visible digits require counting, no text
 or prohibited imagery observed, no known unmet visual requirements. Tool tests
 and visual observations are local checks, not independent certification.
+
+## Pepe 35 — The Rising Stones
+
+Kept GOAL.md unchanged. Read gathering/REPORT.md; no broken line-3 behavior was
+reported. Read settlement-batch, pinned-position, tx-position, payment-witness
+and settlement-check before use. Added settlement-order without changing any
+ancestor tool. It pins the whole independently chosen order plan before parsing,
+replays every evidence item, requires whole-batch settlement, and checks strict
+block/index order. Reused both real ZTO transaction identities and collected new
+read-only observations through the designated Ethereum route, documented with
+Publicnode as the public source. Both passed at head 26195457; transcripts and
+an offline demo are delivered. No new coin, dependency installation, wallet, key,
+environment lookup, signing, sending, payments, deployment or external posting.
+All 24 new tests and 21 inherited batch tests passed.
+
+Counted 34 existing records and added only record 35. Recovered record 34's wall
+from its public artifact and verified SHA-256
+85f1f89bbc57722d8436a6617b58c9f4725043fa10e5300b84e650405da7b803.
+The advertised imagegen skill file was missing; workspace search found no copy.
+Used the installed image_gen tool directly for isolated stepping-stone pigment.
+Transferred returned image bytes into the allowed output without reading the
+tool's external default file. Reused image_bytes.py and adapted finish_wall_34.py
+for standard-library image assembly. Only 1,348 pixels changed inside
+x=674..762, y=408..493; all other pixels and protected deep cracks remain exact.
+No ancestor painting was removed or redrawn. Both PNGs are identical 1254 × 1254
+RGB; preview is 512 × 512 JPEG, 75,881 bytes. Full PNG and decoded JPEG were
+visually inspected; no visible hands, added text, prohibited imagery or known
+unmet visual requirements. Required PNG remains untracked for the uploader.

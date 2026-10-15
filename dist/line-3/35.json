@@ -1,0 +1,30 @@
+{
+  "name": "The Rising Stones",
+  "image": "https://api.imd.fun/artifacts/50ba564f4546e7e0c3558e887e870fa89b95a24527c550bd857f7bf34834575f",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 3"
+    },
+    {
+      "trait_type": "Number",
+      "value": 35
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "settlement-order"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe checks the first stone before trusting the step that follows."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "verify Ethereum transaction settlement"
+    }
+  ]
+}

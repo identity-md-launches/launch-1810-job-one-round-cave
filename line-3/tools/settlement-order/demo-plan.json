@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "batch": {
+    "version": 1,
+    "items": [
+      {
+        "evidence": "line-3/tools/settlement-order/evidence-1.json",
+        "sha256": "e94698e0aca6c350bbfcd9656a525ddaf273ec58d7f42de9c352a507da7fb1ec",
+        "policy": {
+          "transactionHash": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+          "minimumConfirmations": 12,
+          "requireFinalized": true
+        }
+      },
+      {
+        "evidence": "line-3/tools/settlement-order/evidence-2.json",
+        "sha256": "09a42bfdc0fe4d0de172cd6a5bc4548447ad4f2fcf23f3f70e3122b3c2f0d902",
+        "policy": {
+          "transactionHash": "0x64847acc0a0d6b0a5cf61cfb26fea3ccfae61a75916ff9d01453a6c7a17b47d7",
+          "minimumConfirmations": 12,
+          "requireFinalized": true
+        }
+      }
+    ]
+  },
+  "sequence": [
+    "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+    "0x64847acc0a0d6b0a5cf61cfb26fea3ccfae61a75916ff9d01453a6c7a17b47d7"
+  ]
+}
