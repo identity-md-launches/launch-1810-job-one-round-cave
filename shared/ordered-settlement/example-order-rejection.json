@@ -1,0 +1,129 @@
+{
+  "accepted": false,
+  "state": "order_review_required",
+  "actualPlanSha256": "4a5febda367074a56dc6e152f7f708037568ed7ea543aad37f92895eaa83a63f",
+  "expectedPlanSha256": "4a5febda367074a56dc6e152f7f708037568ed7ea543aad37f92895eaa83a63f",
+  "evidenceChecked": true,
+  "orderChecked": true,
+  "limitations": "Historical provider assertions, not consensus, trie or inter-block ancestry proofs. Order means ascending (block number, transaction index), not causation or a successful application workflow. No payment amount, current freshness or authorization is checked. Keep the plan hash independently; replacing plan and expected hash defeats this check. No transactions are sent and no persistent ledger is updated.",
+  "structure": {
+    "valid": true,
+    "diagnostics": []
+  },
+  "orderReview": {
+    "accepted": false,
+    "state": "order_review_required",
+    "expectedPlanSha256": "4a5febda367074a56dc6e152f7f708037568ed7ea543aad37f92895eaa83a63f",
+    "actualPlanSha256": "4a5febda367074a56dc6e152f7f708037568ed7ea543aad37f92895eaa83a63f",
+    "evidenceChecked": true,
+    "orderChecked": true,
+    "limitations": "Historical provider assertions, not consensus, trie or inter-block ancestry proofs. Order means ascending (block number, transaction index), not causation or a successful application workflow. No payment amount, current freshness or authorization is checked. Keep the plan hash independently; replacing plan and expected hash defeats this check. No transactions are sent and no persistent ledger is updated.",
+    "sequence": [
+      "0x64847acc0a0d6b0a5cf61cfb26fea3ccfae61a75916ff9d01453a6c7a17b47d7",
+      "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7"
+    ],
+    "batch": {
+      "accepted": true,
+      "state": "batch_settlement_match",
+      "count": 2,
+      "acceptedCount": 2,
+      "conflictingBlockNumbers": [],
+      "items": [
+        {
+          "index": 0,
+          "transactionHash": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+          "policy": {
+            "transactionHash": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+            "minimumConfirmations": 12,
+            "requireFinalized": true
+          },
+          "expectedSha256": "e94698e0aca6c350bbfcd9656a525ddaf273ec58d7f42de9c352a507da7fb1ec",
+          "accepted": true,
+          "state": "pinned_position_and_settlement_match",
+          "actualSha256": "e94698e0aca6c350bbfcd9656a525ddaf273ec58d7f42de9c352a507da7fb1ec",
+          "positionState": "position_and_settlement_match",
+          "alerts": [],
+          "transactionIndex": 181,
+          "transactionCount": 498,
+          "block": {
+            "number": 26190898,
+            "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+          },
+          "settlementState": "settled",
+          "head": {
+            "number": 26195457,
+            "hash": "0x4086aa5d86624c1bd4d25efc9e3fa1f9482c21df938d6a95c02a2a8cd273a1cd"
+          },
+          "inclusion": {
+            "number": 26190898,
+            "hash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd"
+          },
+          "finalizedHead": {
+            "number": 26195382,
+            "hash": "0xe0f8b54171fffd887b2eec3884fc2e84b659778fbfcb95993575ae4db0b5d809"
+          },
+          "confirmations": 4560,
+          "finalized": true
+        },
+        {
+          "index": 1,
+          "transactionHash": "0x64847acc0a0d6b0a5cf61cfb26fea3ccfae61a75916ff9d01453a6c7a17b47d7",
+          "policy": {
+            "transactionHash": "0x64847acc0a0d6b0a5cf61cfb26fea3ccfae61a75916ff9d01453a6c7a17b47d7",
+            "minimumConfirmations": 12,
+            "requireFinalized": true
+          },
+          "expectedSha256": "09a42bfdc0fe4d0de172cd6a5bc4548447ad4f2fcf23f3f70e3122b3c2f0d902",
+          "accepted": true,
+          "state": "pinned_position_and_settlement_match",
+          "actualSha256": "09a42bfdc0fe4d0de172cd6a5bc4548447ad4f2fcf23f3f70e3122b3c2f0d902",
+          "positionState": "position_and_settlement_match",
+          "alerts": [],
+          "transactionIndex": 146,
+          "transactionCount": 241,
+          "block": {
+            "number": 26194715,
+            "hash": "0xbcf84b28f9f3add08e929da543c1c2059a768af0bca33ea4af1dcb9ca6cf58d9"
+          },
+          "settlementState": "settled",
+          "head": {
+            "number": 26195457,
+            "hash": "0x4086aa5d86624c1bd4d25efc9e3fa1f9482c21df938d6a95c02a2a8cd273a1cd"
+          },
+          "inclusion": {
+            "number": 26194715,
+            "hash": "0xbcf84b28f9f3add08e929da543c1c2059a768af0bca33ea4af1dcb9ca6cf58d9"
+          },
+          "finalizedHead": {
+            "number": 26195382,
+            "hash": "0xe0f8b54171fffd887b2eec3884fc2e84b659778fbfcb95993575ae4db0b5d809"
+          },
+          "confirmations": 743,
+          "finalized": true
+        }
+      ],
+      "limitations": "Historical provider assertions, not consensus or transaction-trie proofs. Pins and policies need independent custody. No freshness, payment amount, recipient ownership, authorization or cross-run deduplication is established. This report does not execute or record payments. Entries can sample different heads."
+    },
+    "positions": [
+      {
+        "transactionHash": "0x64847acc0a0d6b0a5cf61cfb26fea3ccfae61a75916ff9d01453a6c7a17b47d7",
+        "blockNumber": 26194715,
+        "blockHash": "0xbcf84b28f9f3add08e929da543c1c2059a768af0bca33ea4af1dcb9ca6cf58d9",
+        "transactionIndex": 146
+      },
+      {
+        "transactionHash": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7",
+        "blockNumber": 26190898,
+        "blockHash": "0x92fd5a2a4e348630cc5e93252669b754760ae4e818a976dd00db145e30ddc8dd",
+        "transactionIndex": 181
+      }
+    ],
+    "problems": [
+      {
+        "kind": "required_order_not_met",
+        "before": "0x64847acc0a0d6b0a5cf61cfb26fea3ccfae61a75916ff9d01453a6c7a17b47d7",
+        "after": "0xc4ca304c305cae326cab066639ab2156412eee7f5f774b41a2a136369f817ef7"
+      }
+    ]
+  }
+}

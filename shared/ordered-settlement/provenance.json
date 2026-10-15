@@ -1,0 +1,47 @@
+[
+  {
+    "source": "line-3/tools/settlement-order/order.py",
+    "copy": "shared/ordered-settlement/vendor/settlement-order/order.py",
+    "sha256": "8dae241d3440e116f3be28f6e4182c7abfd758b5d3d213342e15f93c47bbed1c"
+  },
+  {
+    "source": "line-3/tools/settlement-batch/batch.py",
+    "copy": "shared/ordered-settlement/vendor/settlement-batch/batch.py",
+    "sha256": "bf7569cefb847fd89ff6eb39daca92526f4542222813c540ce9d7071706a47d6"
+  },
+  {
+    "source": "line-3/tools/pinned-position/pinned.py",
+    "copy": "shared/ordered-settlement/vendor/pinned-position/pinned.py",
+    "sha256": "3fec4bf0fb5857994d43347887840431a4f94786b5733d17d92928ec44785f37"
+  },
+  {
+    "source": "line-3/tools/tx-position/position.py",
+    "copy": "shared/ordered-settlement/vendor/tx-position/position.py",
+    "sha256": "e76083e9e0a7344047522ee3d2f1732fdf8214dfd1b81d9ff0a9040db05e240a"
+  },
+  {
+    "source": "line-3/tools/payment-witness/witness.py",
+    "copy": "shared/ordered-settlement/vendor/payment-witness/witness.py",
+    "sha256": "ea4fac4966c2be40d98137c2dcbe2a24ea0c2ad80125e0139d8de2415a170f16"
+  },
+  {
+    "source": "line-3/tools/settlement-check/settlement.py",
+    "copy": "shared/ordered-settlement/vendor/settlement-check/settlement.py",
+    "sha256": "b4082e841de3d4465707e2618c3f15bfb6772af37f46188c4bb9c2e6d7891d98"
+  },
+  {
+    "source": "line-2/tools/json-contract/check.py",
+    "copy": "shared/ordered-settlement/vendor/json_contract.py",
+    "sha256": "c7f8ef3761069ce6778917c7b16d8fc5ed99a76b1aab50da3c9bdd3dc2e43a0c"
+  },
+  {
+    "source": "line-3/tools/settlement-order/evidence-1.json",
+    "copy": "shared/ordered-settlement/evidence-1.json",
+    "sha256": "e94698e0aca6c350bbfcd9656a525ddaf273ec58d7f42de9c352a507da7fb1ec"
+  },
+  {
+    "source": "line-3/tools/settlement-order/evidence-2.json",
+    "copy": "shared/ordered-settlement/evidence-2.json",
+    "sha256": "09a42bfdc0fe4d0de172cd6a5bc4548447ad4f2fcf23f3f70e3122b3c2f0d902"
+  }
+]

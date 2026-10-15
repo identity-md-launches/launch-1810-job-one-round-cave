@@ -1,10 +1,30 @@
 {
-  "name": "Not painted yet",
-  "image": "https://api.imd.fun/artifacts/ce5dbc18003365f5a1bf9014a2a357c2cb5c5dc2335dd0eb9b661ae703d36308",
+  "name": "The Ordered Pebbles",
+  "image": "https://api.imd.fun/artifacts/bed3ef034cdc0ac958c698188b2661cec12ce8a63809600fa85c1a7c044f1769",
   "attributes": [
     {
       "trait_type": "Cave",
       "value": "Water"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Gathering"
+    },
+    {
+      "trait_type": "Number",
+      "value": 15
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "Ordered settlement review"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe keeps the linked evidence in its intended order before trusting the path."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Gathering"
     }
   ]
 }

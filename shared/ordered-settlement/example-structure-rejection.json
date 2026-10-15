@@ -1,0 +1,19 @@
+{
+  "accepted": false,
+  "state": "structural_review_required",
+  "actualPlanSha256": "712404eaf3f1d4db6cba246c655dc74e12b1727ab7cbe42511caaefd03dfe10c",
+  "expectedPlanSha256": "712404eaf3f1d4db6cba246c655dc74e12b1727ab7cbe42511caaefd03dfe10c",
+  "evidenceChecked": false,
+  "orderChecked": false,
+  "limitations": "Historical provider assertions, not consensus, trie or inter-block ancestry proofs. Order means ascending (block number, transaction index), not causation or a successful application workflow. No payment amount, current freshness or authorization is checked. Keep the plan hash independently; replacing plan and expected hash defeats this check. No transactions are sent and no persistent ledger is updated.",
+  "structure": {
+    "valid": false,
+    "diagnostics": [
+      {
+        "path": "/batch/items/0/policy/requireFinalized",
+        "rule": "type",
+        "message": "expected boolean"
+      }
+    ]
+  }
+}

@@ -87,3 +87,9 @@ Line 2's structural diagnostics join Line 3's non-weakening plan review and pinn
 batch replay. Compatible plans cannot bypass evidence checks; weaker plans never
 open evidence. Includes real historical ZTO fixtures, unchanged vendor copies,
 14 tests and a detached offline trial.
+
+Gathering 15 adds [ordered settlement review](ordered-settlement/README.md).
+Line 2's structural diagnostics join Line 3's exact pinned order-plan replay.
+Two settled transactions in the wrong required order now reject. Includes
+unchanged ordinary vendor files, real historical ZTO evidence, 15 tests and
+a detached offline trial. No plan hash is automatically updated.

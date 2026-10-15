@@ -1,0 +1,142 @@
+PASS line-1/tools/rpc_snapshot.py --verify line-1/tools/bounded-rpc-snapshot/sample-zto-supply.json
+PASS line-1/tools/bounded-rpc-snapshot/snapshot.py --verify line-1/tools/bounded-rpc-snapshot/sample-zto-supply.json
+PASS line-1/tools/anchored-zto-snapshot/anchored.py --verify line-1/tools/anchored-zto-snapshot/sample.json
+PASS line-2/tools/json-contract/check.py line-2/tools/json-contract/report.contract.json line-2/tools/json-contract/report.example.json
+PASS line-2/tools/json-contract/test_check.py
+PASS line-2/tools/ordered-deliverables/check.py line-2/tools/ordered-deliverables/handoff.contract.json line-2/tools/ordered-deliverables/handoff.example.json
+PASS line-2/tools/ordered-deliverables/test_ordered.py
+PASS line-2/tools/batch-contract/check.py line-2/tools/ordered-deliverables/record.strict.contract.json dist/line-2/01.json dist/line-2/22.json dist/line-2/23.json
+PASS -m unittest discover -s line-3/tools/settlement-check -p test_*.py -v
+PASS line-3/tools/payment-witness/witness.py --replay line-3/tools/payment-witness/live-evidence.json
+PASS -m unittest discover -s line-3/tools/payment-witness -p test_*.py -v
+PASS gathering/offline_boundary.py
+PASS line-4/tools/typed-digest/typed_digest.py line-4/tools/typed-digest/zto-example.json --expect 0xc292388738e2cf2c7f57b9b8926821aff508ed38c1b355020cc7dc459dbbb8cb
+PASS -m unittest discover -s test/scratch/typed-digest -p test_*.py -v
+PASS line-4/tools/typed-trace/typed_trace.py line-4/tools/typed-trace/zto-payment.json --expect 0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774 --summary
+PASS -m unittest discover -s line-4/tools/typed-trace -p test_*.py -v
+PASS shared/rpc-evidence/test_bridge.py
+PASS shared/rpc-evidence/verify.py shared/rpc-evidence/chain-id.snapshot.json
+PASS shared/payment-evidence/test_evidence.py
+PASS shared/payment-evidence/explain.py shared/payment-evidence/example.transcript.json shared/payment-evidence/example.policy.json --summary
+PASS shared/payment-evidence/test_explain.py
+PASS line-1/tools/safe-snapshot-files/test_safe_files.py
+PASS line-1/tools/anchored-zto-snapshot/anchored.py --verify line-1/tools/safe-snapshot-files/live-zto.json
+PASS line-1/tools/safe-snapshot-files/safe_files.py line-1/tools/safe-snapshot-files/live-zto.json
+PASS line-2/tools/bounded-contract/check.py line-2/tools/ordered-deliverables/record.strict.contract.json dist/line-2/01.json dist/line-2/22.json dist/line-2/23.json dist/line-2/24.json
+PASS line-2/tools/bounded-contract/test_check.py
+PASS line-3/tools/discovery-diagnostic/diagnose.py --replay-known
+PASS -m unittest discover -s line-3/tools/discovery-diagnostic -p test_*.py
+PASS line-4/tools/domain-check/domain_check.py line-4/tools/domain-check/zto-payment.json --chain-id 1 --name Read-only Payment Evidence --version 1 --primary-type PaymentEvidence --no-verifier --expect 0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774
+PASS -m unittest discover -s line-4/tools/domain-check -v
+PASS shared/payment-evidence/test_bind.py
+PASS shared/payment-evidence/bind.py shared/payment-evidence/example.transcript.json shared/payment-evidence/example.policy.json shared/payment-evidence/example.typed-data.json --chain-id 1 --name Read-only Payment Evidence --version 1 --primary-type PaymentEvidence --no-verifier --summary
+PASS line-1/tools/hash-pinned-zto/pinned.py --verify line-1/tools/hash-pinned-zto/live-zto.json
+PASS line-1/tools/hash-pinned-zto/test_pinned.py
+PASS line-2/tools/repair-review/review.py line-2/tools/repair-review/handoff.contract.json line-2/tools/repair-review/before.example.json line-2/tools/repair-review/after.example.json
+PASS line-2/tools/repair-review/test_review.py
+PASS line-2/tools/bounded-contract/check.py line-2/tools/ordered-deliverables/record.strict.contract.json dist/line-2/25.json
+PASS line-3/tools/provider-agreement/agreement.py --demo
+PASS -m unittest discover -s line-3/tools/provider-agreement -p test_*.py -v
+PASS line-4/tools/request-compare/request_compare.py line-4/tools/request-compare/zto-intended.json line-4/tools/request-compare/zto-intended.json --summary
+PASS -m unittest discover -s line-4/tools/request-compare -v
+PASS shared/payment-evidence/test_corroborate.py
+PASS shared/payment-evidence/corroborate.py shared/payment-evidence/example.paired.json shared/payment-evidence/example.paired-policy.json shared/payment-evidence/example.paired-intended.json shared/payment-evidence/example.paired-intended.json --summary
+PASS line-1/tools/compare-zto-snapshots/compare.py line-1/tools/hash-pinned-zto/live-zto.json line-1/tools/compare-zto-snapshots/live-zto.json
+PASS line-1/tools/compare-zto-snapshots/test_compare.py
+PASS line-2/tools/rule-locator/explain.py shared/payment-evidence/policy.contract.json shared/payment-evidence/example.policy.json
+PASS line-2/tools/rule-locator/test_explain.py
+PASS line-2/tools/bounded-contract/check.py line-2/tools/ordered-deliverables/record.strict.contract.json dist/line-2/26.json
+PASS line-3/tools/payment-recheck/recheck.py --demo
+PASS -m unittest discover -s line-3/tools/payment-recheck -v
+PASS line-4/tools/rpc-request-check/rpc_request_check.py line-4/tools/rpc-request-check/zto-envelope.json line-4/tools/rpc-request-check/zto-envelope.json --summary
+PASS -m unittest discover -s line-4/tools/rpc-request-check -v
+PASS shared/payment-evidence/test_revisit.py
+PASS shared/payment-evidence/revisit.py shared/payment-evidence/example.paired.json shared/payment-evidence/round05.paired.json shared/payment-evidence/example.paired-policy.json shared/payment-evidence/example.revisit-envelope.json shared/payment-evidence/example.revisit-envelope.json --summary
+PASS line-1/tools/snapshot-report/report.py line-1/tools/compare-zto-snapshots/live-zto.json
+PASS line-1/tools/snapshot-report/test_report.py
+PASS line-2/tools/source-locator/locate.py shared/payment-evidence/policy.contract.json shared/payment-evidence/example.policy.json
+PASS line-2/tools/source-locator/test_locate.py
+PASS line-2/tools/bounded-contract/check.py line-2/tools/ordered-deliverables/record.strict.contract.json dist/line-2/27.json
+PASS line-3/tools/settlement-freshness/freshness.py --demo
+PASS -m unittest discover -s line-3/tools/settlement-freshness -v
+PASS line-4/tools/request-set-check/request_set_check.py line-4/tools/request-set-check/zto-set.json line-4/tools/request-set-check/zto-set.json --summary
+PASS -m unittest discover -s line-4/tools/request-set-check -v
+PASS shared/payment-evidence/test_time_review.py
+PASS shared/payment-evidence/time_review.py shared/payment-evidence/example.timed-transcript.json shared/payment-evidence/example.timed-policy.json --as-of 1792008919 --max-head-age 120 --max-finalized-age 1200 --future-skew 30
+PASS line-1/tools/revisit-zto-snapshot/revisit.py --verify line-1/tools/compare-zto-snapshots/live-zto.json line-1/tools/revisit-zto-snapshot/live-revisit.json
+PASS line-1/tools/revisit-zto-snapshot/test_revisit.py
+PASS line-2/tools/bounded-contract/check.py line-2/tools/ordered-deliverables/record.strict.contract.json dist/line-2/28.json
+PASS line-2/tools/contract-change/review.py line-2/tools/json-contract/record.contract.json line-2/tools/ordered-deliverables/record.strict.contract.json dist/line-2/26.json dist/line-2/27.json
+PASS line-2/tools/contract-change/test_review.py
+PASS line-3/tools/paired-freshness/paired.py --demo
+PASS -m unittest discover -s line-3/tools/paired-freshness -p test_*.py -v
+PASS line-4/tools/review-pin/review_pin.py check line-4/tools/review-pin/zto-set.json line-4/tools/review-pin/zto-set.json --expect c1f7a3ff0b7cf878d16be782f567b2bf89f88e9b962ed64210eeaeb2cf6d7023
+PASS -m unittest discover -s line-4/tools/review-pin -v
+PASS shared/payment-evidence/test_paired_pinned_review.py
+PASS shared/payment-evidence/paired_pinned_review.py shared/payment-evidence/paired-pinned-evidence.json shared/payment-evidence/paired-pinned-policy.json shared/payment-evidence/paired-pinned-intended.json shared/payment-evidence/paired-pinned-intended.json --expect-pin 8122b8ba057657d449c42e1c0c857be88eda97aebb8c836b07b2cf3589e8316e --as-of 1792012453 --max-head-age 120 --max-finalized-age 1200 --future-skew 60
+PASS line-1/tools/batched-zto-snapshot/batch.py --verify line-1/tools/batched-zto-snapshot/live-batch.json
+PASS line-2/tools/batch-source/locate.py line-2/tools/ordered-deliverables/record.strict.contract.json dist/line-2/27.json dist/line-2/28.json
+PASS line-2/tools/batch-source/test_locate.py
+PASS line-2/tools/bounded-contract/check.py line-2/tools/ordered-deliverables/record.strict.contract.json dist/line-2/29.json
+PASS line-3/tools/paired-recheck/recheck_pair.py --demo
+PASS -m unittest discover -s line-3/tools/paired-recheck -v
+PASS line-4/tools/review-changes/review_changes.py line-4/tools/review-changes/zto-set.json line-4/tools/review-changes/zto-set.json --expect c1f7a3ff0b7cf878d16be782f567b2bf89f88e9b962ed64210eeaeb2cf6d7023
+PASS -m unittest discover -s test/scratch/review-changes -v
+PASS line-1/tools/batched-zto-snapshot/batch.py --verify gathering/live-batch-09.json
+PASS shared/payment-evidence/test_checkpoint_review.py
+PASS shared/payment-evidence/checkpoint_review.py shared/payment-evidence/checkpoint-baseline.json shared/payment-evidence/paired-pinned-evidence.json shared/payment-evidence/paired-pinned-policy.json shared/payment-evidence/paired-pinned-intended.json shared/payment-evidence/paired-pinned-intended.json --baseline-pin dd94a4fb3ef241db9cffbf8ccb24b4486e0eea308b1c34a7e0668f6c92f90dd4 --request-pin 8122b8ba057657d449c42e1c0c857be88eda97aebb8c836b07b2cf3589e8316e --as-of 1792012453 --max-head-age 120 --max-finalized-age 1200 --future-skew 60
+PASS line-1/tools/two-source-zto/agreement.py --verify line-1/tools/two-source-zto/live-agreement.json
+PASS line-2/tools/source-guard/review.py line-2/tools/source-locator/invalid-report.result.json line-2/tools/json-contract/report.contract.json line-2/tools/rule-locator/report.invalid.json
+PASS line-2/tools/source-guard/test_review.py
+PASS line-3/tools/anchor-bridge/bridge.py --demo
+PASS -m unittest discover -s line-3/tools/anchor-bridge -v
+PASS line-4/tools/string-review/string_review.py line-4/tools/string-review/zto-payment.json --expect 0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774
+PASS -m unittest discover -s line-4/tools/string-review -v
+PASS line-1/tools/retained-snapshot-pin/pin.py line-1/tools/two-source-zto/live-agreement.json --expected-sha256 bb1ce8c232f7d62e83341d3da502a340ce2f8da12cf84580bcc537a3bf3ccb19
+PASS line-1/tools/retained-snapshot-pin/test_pin.py
+PASS line-2/tools/batch-guard/review.py line-2/tools/batch-guard/records.report.json line-2/tools/ordered-deliverables/record.strict.contract.json dist/line-2/29.json dist/line-2/30.json
+PASS line-2/tools/batch-guard/test_review.py
+PASS line-2/tools/bounded-contract/check.py line-2/tools/ordered-deliverables/record.strict.contract.json dist/line-2/30.json dist/line-2/31.json
+PASS line-3/tools/tx-position/position.py --demo
+PASS -m unittest discover -s line-3/tools/tx-position -v
+PASS line-4/tools/integer-review/integer_review.py line-4/tools/integer-review/zto-payment.json --expect 0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774
+PASS -m unittest discover -s line-4/tools/integer-review -v
+PASS shared/payment-evidence/test_anchored_payment.py
+PASS line-1/tools/generic-snapshot-diff/diff.py line-1/tools/bounded-rpc-snapshot/sample-zto-supply.json line-1/tools/generic-snapshot-diff/live-zto-supply.json
+PASS line-2/tools/source-context/show.py shared/payment-evidence/policy.contract.json shared/payment-evidence/example.policy.json
+PASS line-2/tools/source-context/test_show.py
+PASS line-3/tools/pinned-position/pinned.py --demo
+PASS -m unittest discover -s line-3/tools/pinned-position -v
+PASS line-4/tools/bytes-review/bytes_review.py line-4/tools/bytes-review/zto-payment.json --bytes-expect line-4/tools/bytes-review/zto-bytes.json --digest-expect 0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774
+PASS -m unittest discover -s line-4/tools/bytes-review -v
+PASS shared/payment-evidence/test_precision_payment.py
+PASS line-1/tools/batch-response-review/review.py line-1/tools/batch-response-review/zto-batch.json
+PASS -m unittest discover -s line-1/tools/batch-response-review -v
+PASS line-2/tools/html-review/review.py shared/payment-evidence/policy.contract.json shared/payment-evidence/example.policy.json
+PASS line-2/tools/html-review/test_review.py
+PASS line-3/tools/settlement-batch/batch.py --demo
+PASS -m unittest discover -s line-3/tools/settlement-batch -v
+PASS line-4/tools/schema-review/schema_review.py line-4/tools/schema-review/zto-payment.json --schema-expect line-4/tools/schema-review/zto-schema.json --digest-expect 0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774
+PASS -m unittest discover -s test/scratch/schema-review -v
+PASS shared/payment-evidence/test_byte_payment.py
+PASS line-1/tools/snapshot-select/select_result.py line-1/tools/snapshot-select/live-block.json --pointer /transactions/0
+PASS line-1/tools/snapshot-select/select_result.py line-1/tools/bounded-rpc-snapshot/sample-zto-supply.json
+PASS -m unittest discover -s line-1/tools/snapshot-select -v
+PASS line-2/tools/sarif-review/review.py shared/payment-evidence/policy.contract.json shared/payment-evidence/example.policy.json
+PASS line-2/tools/sarif-review/test_review.py
+PASS line-3/tools/settlement-plan-diff/plan_diff.py --demo
+PASS -m unittest discover -s line-3/tools/settlement-plan-diff -v
+PASS line-4/tools/array-review/array_review.py line-4/tools/array-review/zto-batch.json --expect line-4/tools/array-review/zto-arrays.json --digest-expect 0xafd46e38940aa3cad45ccacf9ebbea5686570df15dcbf08e79119502d95605ba
+PASS -m unittest discover -s test/scratch/array-review -v
+PASS shared/payment-evidence/test_schema_payment.py
+PASS line-1/tools/snapshot-integer/decode.py line-1/tools/snapshot-integer/live-zto.json --encoding uint256 --decimals 18
+PASS line-1/tools/snapshot-integer/decode.py line-1/tools/snapshot-select/live-block.json --pointer /number --encoding quantity
+PASS -m unittest discover -s line-1/tools/snapshot-integer -v
+PASS line-2/tools/jsonl-contract/check.py shared/payment-evidence/policy.contract.json line-2/tools/jsonl-contract/zto-policy.jsonl
+PASS line-2/tools/jsonl-contract/test_check.py
+PASS line-3/tools/settlement-order/order.py --demo
+PASS -m unittest discover -s line-3/tools/settlement-order -v
+PASS line-4/tools/hash-witness/hash_witness.py line-4/tools/hash-witness/zto-trace.json --expect 0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774
+PASS line-4/tools/hash-witness/hash_witness.py line-4/tools/hash-witness/ether-mail-trace.json --expect 0xbe609aee343fb3c4b28e1df9e632fca64fcfaede20f02e86244efddf30957bd2
+PASS -m unittest discover -s line-4/tools/hash-witness -v
+PASS shared/settlement-gate/test_gate.py

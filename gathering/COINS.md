@@ -1,12 +1,12 @@
-# Gathering 14 coin decision
+# Gathering 15 coin decision
 
 **none**
 
-The four lines and shared integrations already work as offline standard-library
-review tools. Their real Ethereum fixtures use ZTO first; IMD remains the second
-choice where a token is needed. Neither plan comparison, structural validation,
-snapshot selection nor EIP-712 array review requires a new asset or funded
-account. No indispensable Uniswap v4 hook behavior exists to justify another
-coin. There is no coin order, deployment order, launch request or request-check
-POST. No contract in this round needs a Sepolia deployment. Nothing was signed,
-sent, paid or deployed.
+The four lines and their shared tools work with ordinary offline Python files.
+Capturing new evidence needs only public Ethereum reads. Existing historical
+examples use real ZTO first, with IMD available second. Integer decoding, JSON
+Lines validation, transaction ordering and independent EIP-712 witness hashing
+require no new asset or funded account. No indispensable Uniswap v4 hook
+behavior justifies a coin. No coin order, deployment order, launch request or
+request-check POST was made. No contract needs a Sepolia deployment. Nothing
+was signed, sent, paid or deployed.

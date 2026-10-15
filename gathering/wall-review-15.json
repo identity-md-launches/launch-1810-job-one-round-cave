@@ -1,0 +1,50 @@
+{
+  "ancestorSha256": "f5b1343c09fcf96ad5901a1f6f0f14065af5588f5c867720eba1eee3ab1a14d9",
+  "ancestorSize": [
+    1254,
+    1254
+  ],
+  "wallSize": [
+    1254,
+    1254
+  ],
+  "wallFormat": "PNG",
+  "wallMode": "RGB",
+  "wallSha256": "bed3ef034cdc0ac958c698188b2661cec12ce8a63809600fa85c1a7c044f1769",
+  "generatedDraftSha256": "b878dbebe5c514adb89cfbb215fadbd7dd22b250007e548e6de32cc998ed083b",
+  "generatedDraftRetained": false,
+  "sourceRectangle": [
+    395,
+    294,
+    498,
+    399
+  ],
+  "additionRectangle": [
+    389,
+    300,
+    85,
+    87
+  ],
+  "changedPixels": 2226,
+  "unchangedPixels": 1570290,
+  "allPixelsOutsideAdditionUnchanged": true,
+  "deepCracksProtected": true,
+  "previewSize": [
+    512,
+    512
+  ],
+  "previewFormat": "JPEG",
+  "previewBytes": 76203,
+  "imageTool": "image_gen.imagegen",
+  "prompt": "Preserve the ancestral square cave and all older marks. Add two small yellow ochre pebbles joined by a charcoal cord on vacant stone left above Pepe, one before the other. Worn earth pigments, no hands, letters, numbers, logos or borders.",
+  "reviewStatus": "visually inspected full PNG and decoded JPEG",
+  "unmetVisualRequirements": [],
+  "visualFindings": {
+    "centralPepe": "wide mouth and heavy-lidded eyes preserved",
+    "newMark": "two worn ochre pebbles with a curved charcoal connection",
+    "newHandsOrHandprints": 0,
+    "newDigitsToCount": 0,
+    "prohibitedElementsObserved": false,
+    "olderMarks": "unchanged outside vacant addition rectangle"
+  }
+}
