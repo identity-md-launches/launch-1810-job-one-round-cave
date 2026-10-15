@@ -273,3 +273,27 @@ all other 1,570,720 pixels are exact ancestors. Inspected full PNG and decoded
 JPEG, including both unchanged five-digit hands. Final wall PNGs are 1254-square;
 record 34's JPEG is 512-square and 78,415 bytes. No new hands or writing.
 Dimensions, formats, visual review and limits are in wall-review-34.json.
+
+
+Round 35: kept GOAL.md, all ancestor tools and all older numbered records.
+Read Gathering 14's report: no Line 4 breakage to repair. Added the standalone
+standard-library tools/hash-witness/ piece. Inspected ancestor typed_trace.py,
+its encoder, test fixtures and real historical ZTO payment evidence; exported
+three ordinary trace fixtures once. Source/fixture hashes are in provenance.json.
+No ancestor encoder code is imported or copied into the new verifier. Consulted
+https://eips.ethereum.org/EIPS/eip-712 and Team Keccak's primary description at
+https://keccak.team/keccak_specs_summary.html to write a second Keccak and trace
+checker. Published Ether Mail, empty/abc Keccak and 42 hashlib SHA3 comparisons
+provide additional independent checks. All 30 tests pass here and detached.
+No runtime dependency, new coin, fresh-chain claim or signing functionality.
+
+Recovered record 34's wall and verified its public artifact SHA-256. Used the
+imagegen skill and built-in edit tool, then the existing image_bytes.py codec
+and pigment-preservation technique. Only 1,082 new pigment pixels were retained;
+1,571,434 ancestor pixels remain exact. Every older painting, both five-digit
+hands, cave framing, warm light and water remain. Inspected final PNG/JPEG:
+no known unmet visual requirement. Required wall-v15.png and wall.png are
+identical 1254-square RGB PNGs; record 35's JPEG is 512-square, 78,435 bytes.
+Prompt, hashes, bounds and limits are recorded in wall-review-35.json. Output
+images remain untracked. No environment lookup, wallet/key access, signature,
+transaction sending, payment, posting or deployment was needed.

@@ -1,0 +1,326 @@
+{
+  "traceVersion": 1,
+  "primaryType": "Checks",
+  "typeEncoding": "Checks(int8 signed,uint256 maximum,bool flag,bytes2 fixed,bytes binary,string unicode,string empty,uint8[2][] nested,Pod[] pods,Node tree)Node(Node[] children)Pod(bytes32 hidden)",
+  "domainSeparator": "0x6192106f129ce05c9075d319c1fa6ea9b3ae37cbd0c1ef92e2be7137bb07baa1",
+  "messageHash": "0xf925c8b4645dbd3eb43a1dd4e6dbd0c98c653cd262288722f1845778b34e3cf3",
+  "digest": "0xbf1f9acedd3f9924aafba0d1b362a4bb33ab5c7fa4855b930ed2ededc2ce9ba6",
+  "nodeOrder": "children before parents",
+  "nodes": [
+    {
+      "path": "/domain",
+      "type": "EIP712Domain",
+      "kind": "struct",
+      "typeEncoding": "EIP712Domain()",
+      "typeHash": "0x20bcc3f8105eea47d067386e42e60246e89393cd61c512edd1e87688890fb914",
+      "fields": [],
+      "preimage": "0x20bcc3f8105eea47d067386e42e60246e89393cd61c512edd1e87688890fb914",
+      "preimageBytes": 32,
+      "word": "0x6192106f129ce05c9075d319c1fa6ea9b3ae37cbd0c1ef92e2be7137bb07baa1"
+    },
+    {
+      "path": "/message/signed",
+      "type": "int8",
+      "kind": "atomic",
+      "normalizedValue": "-128",
+      "word": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff80"
+    },
+    {
+      "path": "/message/maximum",
+      "type": "uint256",
+      "kind": "atomic",
+      "normalizedValue": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+      "word": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    },
+    {
+      "path": "/message/flag",
+      "type": "bool",
+      "kind": "atomic",
+      "normalizedValue": false,
+      "word": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "path": "/message/fixed",
+      "type": "bytes2",
+      "kind": "atomic",
+      "normalizedValue": "0x12ab",
+      "word": "0x12ab000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "path": "/message/binary",
+      "type": "bytes",
+      "kind": "dynamic",
+      "inputBytes": 3,
+      "preimage": "0x00ff01",
+      "preimageBytes": 3,
+      "word": "0x86694dc7d98198284ac65dbb2e161b6870ec602f88c92138edd1efe192574a71"
+    },
+    {
+      "path": "/message/unicode",
+      "type": "string",
+      "kind": "dynamic",
+      "inputBytes": 10,
+      "preimage": "0x636166c3a920f09f90b8",
+      "preimageBytes": 10,
+      "word": "0xe4da40a6b8d3e86ad348a87a5dfe2162f4fab615594130449e363feb7b86be91"
+    },
+    {
+      "path": "/message/empty",
+      "type": "string",
+      "kind": "dynamic",
+      "inputBytes": 0,
+      "preimage": "0x",
+      "preimageBytes": 0,
+      "word": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+    },
+    {
+      "path": "/message/nested/0/0",
+      "type": "uint8",
+      "kind": "atomic",
+      "normalizedValue": "1",
+      "word": "0x0000000000000000000000000000000000000000000000000000000000000001"
+    },
+    {
+      "path": "/message/nested/0/1",
+      "type": "uint8",
+      "kind": "atomic",
+      "normalizedValue": "2",
+      "word": "0x0000000000000000000000000000000000000000000000000000000000000002"
+    },
+    {
+      "path": "/message/nested/0",
+      "type": "uint8[2]",
+      "kind": "array",
+      "elements": [
+        {
+          "path": "/message/nested/0/0",
+          "offsetBytes": 0,
+          "word": "0x0000000000000000000000000000000000000000000000000000000000000001"
+        },
+        {
+          "path": "/message/nested/0/1",
+          "offsetBytes": 32,
+          "word": "0x0000000000000000000000000000000000000000000000000000000000000002"
+        }
+      ],
+      "preimage": "0x00000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000002",
+      "preimageBytes": 64,
+      "word": "0xe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e0"
+    },
+    {
+      "path": "/message/nested/1/0",
+      "type": "uint8",
+      "kind": "atomic",
+      "normalizedValue": "3",
+      "word": "0x0000000000000000000000000000000000000000000000000000000000000003"
+    },
+    {
+      "path": "/message/nested/1/1",
+      "type": "uint8",
+      "kind": "atomic",
+      "normalizedValue": "4",
+      "word": "0x0000000000000000000000000000000000000000000000000000000000000004"
+    },
+    {
+      "path": "/message/nested/1",
+      "type": "uint8[2]",
+      "kind": "array",
+      "elements": [
+        {
+          "path": "/message/nested/1/0",
+          "offsetBytes": 0,
+          "word": "0x0000000000000000000000000000000000000000000000000000000000000003"
+        },
+        {
+          "path": "/message/nested/1/1",
+          "offsetBytes": 32,
+          "word": "0x0000000000000000000000000000000000000000000000000000000000000004"
+        }
+      ],
+      "preimage": "0x00000000000000000000000000000000000000000000000000000000000000030000000000000000000000000000000000000000000000000000000000000004",
+      "preimageBytes": 64,
+      "word": "0x2e174c10e159ea99b867ce3205125c24a42d128804e4070ed6fcc8cc98166aa0"
+    },
+    {
+      "path": "/message/nested",
+      "type": "uint8[2][]",
+      "kind": "array",
+      "elements": [
+        {
+          "path": "/message/nested/0",
+          "offsetBytes": 0,
+          "word": "0xe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e0"
+        },
+        {
+          "path": "/message/nested/1",
+          "offsetBytes": 32,
+          "word": "0x2e174c10e159ea99b867ce3205125c24a42d128804e4070ed6fcc8cc98166aa0"
+        }
+      ],
+      "preimage": "0xe90b7bceb6e7df5418fb78d8ee546e97c83a08bbccc01a0644d599ccd2a7c2e02e174c10e159ea99b867ce3205125c24a42d128804e4070ed6fcc8cc98166aa0",
+      "preimageBytes": 64,
+      "word": "0xa9bb8c3f1f12e9aa903a50c47f314b57610a3ab32f2d463293f58836def38d36"
+    },
+    {
+      "path": "/message/pods",
+      "type": "Pod[]",
+      "kind": "array",
+      "elements": [],
+      "preimage": "0x",
+      "preimageBytes": 0,
+      "word": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+    },
+    {
+      "path": "/message/tree/children/0/children",
+      "type": "Node[]",
+      "kind": "array",
+      "elements": [],
+      "preimage": "0x",
+      "preimageBytes": 0,
+      "word": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+    },
+    {
+      "path": "/message/tree/children/0",
+      "type": "Node",
+      "kind": "struct",
+      "typeEncoding": "Node(Node[] children)",
+      "typeHash": "0x10fdbafb4d5e7cd5381e59375bde055271a5b5a6f97d51ed1c6f2e492f868ba0",
+      "fields": [
+        {
+          "name": "children",
+          "type": "Node[]",
+          "path": "/message/tree/children/0/children",
+          "offsetBytes": 32,
+          "word": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        }
+      ],
+      "preimage": "0x10fdbafb4d5e7cd5381e59375bde055271a5b5a6f97d51ed1c6f2e492f868ba0c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+      "preimageBytes": 64,
+      "word": "0x2b08d9ae954ba4cbaf814320ceaffb637eedf723b762d6b059b41da04f5aec5c"
+    },
+    {
+      "path": "/message/tree/children",
+      "type": "Node[]",
+      "kind": "array",
+      "elements": [
+        {
+          "path": "/message/tree/children/0",
+          "offsetBytes": 0,
+          "word": "0x2b08d9ae954ba4cbaf814320ceaffb637eedf723b762d6b059b41da04f5aec5c"
+        }
+      ],
+      "preimage": "0x2b08d9ae954ba4cbaf814320ceaffb637eedf723b762d6b059b41da04f5aec5c",
+      "preimageBytes": 32,
+      "word": "0xca7515c7425121884abd85f6b44a2c228de61aff9235b5f09f1ca8c040bd1d04"
+    },
+    {
+      "path": "/message/tree",
+      "type": "Node",
+      "kind": "struct",
+      "typeEncoding": "Node(Node[] children)",
+      "typeHash": "0x10fdbafb4d5e7cd5381e59375bde055271a5b5a6f97d51ed1c6f2e492f868ba0",
+      "fields": [
+        {
+          "name": "children",
+          "type": "Node[]",
+          "path": "/message/tree/children",
+          "offsetBytes": 32,
+          "word": "0xca7515c7425121884abd85f6b44a2c228de61aff9235b5f09f1ca8c040bd1d04"
+        }
+      ],
+      "preimage": "0x10fdbafb4d5e7cd5381e59375bde055271a5b5a6f97d51ed1c6f2e492f868ba0ca7515c7425121884abd85f6b44a2c228de61aff9235b5f09f1ca8c040bd1d04",
+      "preimageBytes": 64,
+      "word": "0x1491a53aba759375e0ec4e99ab4967c0ca726e7e2a9d43ca491dc72da1889999"
+    },
+    {
+      "path": "/message",
+      "type": "Checks",
+      "kind": "struct",
+      "typeEncoding": "Checks(int8 signed,uint256 maximum,bool flag,bytes2 fixed,bytes binary,string unicode,string empty,uint8[2][] nested,Pod[] pods,Node tree)Node(Node[] children)Pod(bytes32 hidden)",
+      "typeHash": "0xf140f630f11579f6cad1f777accc8489fc39b19a5a815a6373bdc5f4beef6b3f",
+      "fields": [
+        {
+          "name": "signed",
+          "type": "int8",
+          "path": "/message/signed",
+          "offsetBytes": 32,
+          "word": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff80"
+        },
+        {
+          "name": "maximum",
+          "type": "uint256",
+          "path": "/message/maximum",
+          "offsetBytes": 64,
+          "word": "0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        },
+        {
+          "name": "flag",
+          "type": "bool",
+          "path": "/message/flag",
+          "offsetBytes": 96,
+          "word": "0x0000000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "name": "fixed",
+          "type": "bytes2",
+          "path": "/message/fixed",
+          "offsetBytes": 128,
+          "word": "0x12ab000000000000000000000000000000000000000000000000000000000000"
+        },
+        {
+          "name": "binary",
+          "type": "bytes",
+          "path": "/message/binary",
+          "offsetBytes": 160,
+          "word": "0x86694dc7d98198284ac65dbb2e161b6870ec602f88c92138edd1efe192574a71"
+        },
+        {
+          "name": "unicode",
+          "type": "string",
+          "path": "/message/unicode",
+          "offsetBytes": 192,
+          "word": "0xe4da40a6b8d3e86ad348a87a5dfe2162f4fab615594130449e363feb7b86be91"
+        },
+        {
+          "name": "empty",
+          "type": "string",
+          "path": "/message/empty",
+          "offsetBytes": 224,
+          "word": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "name": "nested",
+          "type": "uint8[2][]",
+          "path": "/message/nested",
+          "offsetBytes": 256,
+          "word": "0xa9bb8c3f1f12e9aa903a50c47f314b57610a3ab32f2d463293f58836def38d36"
+        },
+        {
+          "name": "pods",
+          "type": "Pod[]",
+          "path": "/message/pods",
+          "offsetBytes": 288,
+          "word": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+        },
+        {
+          "name": "tree",
+          "type": "Node",
+          "path": "/message/tree",
+          "offsetBytes": 320,
+          "word": "0x1491a53aba759375e0ec4e99ab4967c0ca726e7e2a9d43ca491dc72da1889999"
+        }
+      ],
+      "preimage": "0xf140f630f11579f6cad1f777accc8489fc39b19a5a815a6373bdc5f4beef6b3fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff80ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000000000000000000000000000000000000000000000000000000000012ab00000000000000000000000000000000000000000000000000000000000086694dc7d98198284ac65dbb2e161b6870ec602f88c92138edd1efe192574a71e4da40a6b8d3e86ad348a87a5dfe2162f4fab615594130449e363feb7b86be91c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470a9bb8c3f1f12e9aa903a50c47f314b57610a3ab32f2d463293f58836def38d36c5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a4701491a53aba759375e0ec4e99ab4967c0ca726e7e2a9d43ca491dc72da1889999",
+      "preimageBytes": 352,
+      "word": "0xf925c8b4645dbd3eb43a1dd4e6dbd0c98c653cd262288722f1845778b34e3cf3"
+    }
+  ],
+  "envelope": {
+    "prefix": "0x1901",
+    "domainOffsetBytes": 2,
+    "messageOffsetBytes": 34,
+    "preimage": "0x19016192106f129ce05c9075d319c1fa6ea9b3ae37cbd0c1ef92e2be7137bb07baa1f925c8b4645dbd3eb43a1dd4e6dbd0c98c653cd262288722f1845778b34e3cf3",
+    "preimageBytes": 66,
+    "digest": "0xbf1f9acedd3f9924aafba0d1b362a4bb33ab5c7fa4855b930ed2ededc2ce9ba6"
+  }
+}

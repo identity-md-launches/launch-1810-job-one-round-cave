@@ -1,0 +1,22 @@
+{
+  "fixtureGenerator": "Inspected ancestor typed_trace.explain; generation is a one-time build step, never a runtime import.",
+  "sourceFiles": {
+    "line-4/tools/typed-trace/typed_trace.py": "5c31aee1c6c845e2624448938a586016dd6304f768b1f793852919ec907ca78d",
+    "line-4/tools/typed-trace/typed_digest.py": "a6903cd67fd837f18be3546721830228646df5e144c04f7a5cbd40c5f21854d9",
+    "line-4/tools/typed-trace/zto-payment.json": "2cf66267a37b24255fc5a7d2a24489ac5261cb247d4f18e2ef87f0e542d1ef54",
+    "line-4/tools/typed-trace/test_trace.py": "c62a575f7eee0b39e0291b4f5b20b3618371f0cefb7a5fa495be83d6e6c0b903"
+  },
+  "fixtureSha256": {
+    "edge-trace.json": "eb96115d29669977744379ea8282a408e55471c7627fa5b8ac6b192aad70c527",
+    "zto-trace.json": "f1ffdd010a0e4548f1df2816005dcc093bc3e1378043c5a439c1283dcc8c20c5",
+    "ether-mail-trace.json": "6eb595d4a43a7563b5fb952f5ab7c94b0ee1e9e51cf5d84ee6602b803a6677e4"
+  },
+  "newImplementation": "keccak_check.py and hash_witness.py are new implementations, with no imports or copies of the ancestor encoder.",
+  "sources": [
+    "https://eips.ethereum.org/EIPS/eip-712",
+    "https://keccak.team/keccak_specs_summary.html"
+  ],
+  "zto": "Historical inherited payment evidence commitment, not a fresh receipt, deployed interface or independent approval.",
+  "etherMail": "Published EIP-712 example, exported as a trace; expected digest is published independently.",
+  "edge": "Synthetic encoding exercise, not a chain observation."
+}

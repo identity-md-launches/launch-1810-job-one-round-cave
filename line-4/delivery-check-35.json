@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "recordCount": 35,
+  "number": 35,
+  "olderRecordsAndPreviewsUnchanged": true,
+  "goalUnchanged": true,
+  "goalSha256": "9d94a21e71775ee5e1c6d9bbeabec6b40dc5ea061eee51fe61be590a47402996",
+  "scopeChecked": true,
+  "sourceAndFixtureProvenanceMatches": true,
+  "allLocalChecksPassed": true,
+  "wall": {
+    "paths": [
+      "artifacts/line-4/wall.png",
+      "artifacts/line-4/wall-v15.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "bytes": 3910890,
+    "sha256": "6dcaa1836e970d214039ab5e6fb8b3c096f1ac75b8c3e4e9defe8dcb62564032"
+  },
+  "preview": {
+    "path": "dist/line-4/35.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 78435,
+    "sha256": "5066ee41d9a47ee975abfe9e4bfe4cb281e1b9800d5ca442f2906eb04ca2fc9c"
+  },
+  "unmetVisualRequirements": [],
+  "limitations": "Structural checks and local tests do not certify appearance, cryptographic correctness or source-request equivalence."
+}

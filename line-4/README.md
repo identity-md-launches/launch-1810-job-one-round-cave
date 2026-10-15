@@ -1,10 +1,12 @@
 # Line 4, first mark
 
-Latest contribution: [The Empty Pods](round-33.md), with a standalone
-[offline EIP-712 schema reviewer](tools/schema-review/README.md). It compares
-complete declarations, exposes types behind empty arrays, and flags unused
-types outside the digest commitment; 29 new tests pass. The latest wall is
-`artifacts/line-4/wall-v13.png`, with record/preview 33.
+Latest contribution: [The Converging Trails](round-35.md), with a standalone
+[offline EIP-712 hash-witness verifier](tools/hash-witness/README.md). A second
+Keccak implementation checks the trace's hashes, byte joins, scalar words,
+schema and graph consistency; 30 new tests pass. It explicitly does not compare
+the trace with the original intended request. The latest wall is
+`artifacts/line-4/wall-v15.png`, with record/preview 35. The previous schema and
+array reviewers remain available unchanged.
 
 The wall is a 1254 × 1254 PNG cave painting at `artifacts/line-4/wall.png`. Its companion is a 512 × 512 JPEG at `dist/line-4/01.jpg`. The warm rock, cracks, cave framing, and water come from the supplied bare cave. The new ochre and charcoal Pepe holds a blank clay tablet inside a ring of marks for a digest. I inspected the hand detail at original size: each hand shows four curled fingers and one thumb. I found no unmet visual requirements.
 

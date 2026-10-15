@@ -1,0 +1,10 @@
+{
+  "witnessValid": true,
+  "digest": "0xbe609aee343fb3c4b28e1df9e632fca64fcfaede20f02e86244efddf30957bd2",
+  "matchesExpected": true,
+  "nodesChecked": 13,
+  "hashesChecked": 14,
+  "hashInputBytes": 801,
+  "sourceTypedDataChecked": false,
+  "scope": "Trace byte consistency only; compare the witness with the original intended typed data separately."
+}

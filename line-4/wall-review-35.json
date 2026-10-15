@@ -1,0 +1,48 @@
+{
+  "wall": {
+    "paths": [
+      "artifacts/line-4/wall.png",
+      "artifacts/line-4/wall-v15.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "bytes": 3910890,
+    "sha256": "6dcaa1836e970d214039ab5e6fb8b3c096f1ac75b8c3e4e9defe8dcb62564032"
+  },
+  "preview": {
+    "path": "dist/line-4/35.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 78435,
+    "sha256": "5066ee41d9a47ee975abfe9e4bfe4cb281e1b9800d5ca442f2906eb04ca2fc9c"
+  },
+  "ancestorSha256": "fb883d3a545320a725574561733ef70bc6e0395180efc23e92208024b837eb66",
+  "generatedDraftSha256": "5ebb707c9142f9ce48c31ad32615fa11f0e9e7e051c3cd1a984f6090758806c4",
+  "imageTool": "Built-in imagegen; generation 01a13dc9-9dd3-71f3-90ce-f22fb1a9b7e7",
+  "prompt": "Preserve the entire inherited square cave, all paintings, rock, cracks, light, water and framing. Add only two short uneven charcoal trails converging on one small hollow red ochre pebble on vacant upper-middle rock, x690..800 y140..240. Worn earth pigments, bare stone inside. Preserve recognizable Pepe and both five-digit hands. No new hands, handprints, figures, writing, numerals, logos, watermarks or frames.",
+  "changedPixels": 1082,
+  "unchangedPixels": 1571434,
+  "additionBoundsExclusive": [
+    735,
+    171,
+    799,
+    265
+  ],
+  "preservation": "Only new generated pigment was transferred. Every other pixel remains exact ancestor data. Deep original fissures are protected; every older painting, Pepe, both hands, cave light, framing and water are unchanged.",
+  "visualReview": "Inspected final 1254-square PNG and decoded 512-square JPEG. Pepe retains his broad mouth and heavy-lidded eyes. Both original hands retain four fingers and one thumb each, with no new hands or handprints. Older paintings, warm rock, cracks, torchlight, framing and water remain. No letters, numbers, captions, signatures, logos, watermarks, new border/frame, real people or political/hateful symbols observed. No known unmet visual requirements. Local inspection is not independent certification.",
+  "unmetVisualRequirements": [],
+  "limitations": [
+    "Local review is not independent visual certification.",
+    "The small mark is subtle in the preview.",
+    "Full generated draft changed surrounding stone; only new pigment was retained."
+  ],
+  "independentPreservationRecheck": {
+    "ancestorDownloadedAgainAndHashVerified": true,
+    "changedPixels": 1082,
+    "exactAncestorPixels": 1571434,
+    "allChangesInsideRecordedBounds": true
+  }
+}

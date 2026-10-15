@@ -1,0 +1,129 @@
+{
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "new suite",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "line-4/tools/hash-witness",
+        "-v"
+      ],
+      "cwd": ".",
+      "expectedExit": 0,
+      "actualExit": 0,
+      "passed": true,
+      "stdout": "",
+      "stderr": "test_cli_success_mismatch_and_malformed (test_hash_witness.BoundaryTests.test_cli_success_mismatch_and_malformed) ... ok\ntest_no_network_dependencies (test_hash_witness.BoundaryTests.test_no_network_dependencies) ... ok\ntest_reader_hidden_traversal_symlinks_directory_fifo_size (test_hash_witness.BoundaryTests.test_reader_hidden_traversal_symlinks_directory_fifo_size) ... ok\ntest_reader_regular_and_absolute_inside_workspace (test_hash_witness.BoundaryTests.test_reader_regular_and_absolute_inside_workspace) ... ok\ntest_ethereum_empty_and_abc_vectors (test_hash_witness.HashTests.test_ethereum_empty_and_abc_vectors) ... ok\ntest_hash_requires_bytes (test_hash_witness.HashTests.test_hash_requires_bytes) ... ok\ntest_permutation_and_padding_with_independent_hashlib (test_hash_witness.HashTests.test_permutation_and_padding_with_independent_hashlib) ... ok\ntest_ancestor_match_flag_never_controls_result (test_hash_witness.WitnessTests.test_ancestor_match_flag_never_controls_result) ... ok\ntest_array_order_offsets_lengths_and_child_reuse (test_hash_witness.WitnessTests.test_array_order_offsets_lengths_and_child_reuse) ... ok\ntest_atomic_normalization_and_ranges (test_hash_witness.WitnessTests.test_atomic_normalization_and_ranges) ... ok\ntest_bad_lengths_and_boolean_offsets_rejected (test_hash_witness.WitnessTests.test_bad_lengths_and_boolean_offsets_rejected) ... ok\ntest_child_path_word_type_and_order_rejected (test_hash_witness.WitnessTests.test_child_path_word_type_and_order_rejected) ... ok\ntest_conflicting_dependency_declarations (test_hash_witness.WitnessTests.test_conflicting_dependency_declarations) ... ok\ntest_dynamic_utf8_and_byte_count (test_hash_witness.WitnessTests.test_dynamic_utf8_and_byte_count) ... ok\ntest_empty_nested_recursive_dynamic_and_scalar_edges (test_hash_witness.WitnessTests.test_empty_nested_recursive_dynamic_and_scalar_edges) ... ok\ntest_envelope_and_summary_tampering (test_hash_witness.WitnessTests.test_envelope_and_summary_tampering) ... ok\ntest_every_hash_and_preimage_tampering_rejected (test_hash_witness.WitnessTests.test_every_hash_and_preimage_tampering_rejected) ... ok\ntest_expected_hex_validation (test_hash_witness.WitnessTests.test_expected_hex_validation) ... ok\ntest_fixed_bytes_padding_not_address_padding (test_hash_witness.WitnessTests.test_fixed_bytes_padding_not_address_padding) ... ok\ntest_hash_and_node_limits_fail_closed (test_hash_witness.WitnessTests.test_hash_and_node_limits_fail_closed) ... ok\ntest_historical_zto_trace (test_hash_witness.WitnessTests.test_historical_zto_trace) ... ok\ntest_malformed_json_values_fail_without_type_errors (test_hash_witness.WitnessTests.test_malformed_json_values_fail_without_type_errors) ... ok\ntest_malformed_node_members_never_escape_as_type_errors (test_hash_witness.WitnessTests.test_malformed_node_members_never_escape_as_type_errors) ... ok\ntest_no_input_mutation (test_hash_witness.WitnessTests.test_no_input_mutation) ... ok\ntest_orphan_duplicate_missing_and_forward_nodes (test_hash_witness.WitnessTests.test_orphan_duplicate_missing_and_forward_nodes) ... ok\ntest_published_ether_mail (test_hash_witness.WitnessTests.test_published_ether_mail) ... ok\ntest_raw_json_depth_duplicates_floats_unicode_and_cycles (test_hash_witness.WitnessTests.test_raw_json_depth_duplicates_floats_unicode_and_cycles) ... ok\ntest_schema_dependency_order_unused_missing_and_field_order (test_hash_witness.WitnessTests.test_schema_dependency_order_unused_missing_and_field_order) ... ok\ntest_valid_trace_expected_mismatch (test_hash_witness.WitnessTests.test_valid_trace_expected_mismatch) ... ok\ntest_version_roles_unknown_members_and_root_type (test_hash_witness.WitnessTests.test_version_roles_unknown_members_and_root_type) ... ok\n\n----------------------------------------------------------------------\nRan 30 tests in 1.900s\n\nOK\n"
+    },
+    {
+      "name": "historical ZTO",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "line-4/tools/hash-witness/hash_witness.py",
+        "line-4/tools/hash-witness/zto-trace.json",
+        "--expect",
+        "0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774"
+      ],
+      "cwd": ".",
+      "expectedExit": 0,
+      "actualExit": 0,
+      "passed": true,
+      "stdout": "{\n  \"witnessValid\": true,\n  \"digest\": \"0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774\",\n  \"matchesExpected\": true,\n  \"nodesChecked\": 12,\n  \"hashesChecked\": 7,\n  \"hashInputBytes\": 691,\n  \"sourceTypedDataChecked\": false,\n  \"scope\": \"Trace byte consistency only; compare the witness with the original intended typed data separately.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "published Mail",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "line-4/tools/hash-witness/hash_witness.py",
+        "line-4/tools/hash-witness/ether-mail-trace.json",
+        "--expect",
+        "0xbe609aee343fb3c4b28e1df9e632fca64fcfaede20f02e86244efddf30957bd2"
+      ],
+      "cwd": ".",
+      "expectedExit": 0,
+      "actualExit": 0,
+      "passed": true,
+      "stdout": "{\n  \"witnessValid\": true,\n  \"digest\": \"0xbe609aee343fb3c4b28e1df9e632fca64fcfaede20f02e86244efddf30957bd2\",\n  \"matchesExpected\": true,\n  \"nodesChecked\": 13,\n  \"hashesChecked\": 14,\n  \"hashInputBytes\": 801,\n  \"sourceTypedDataChecked\": false,\n  \"scope\": \"Trace byte consistency only; compare the witness with the original intended typed data separately.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "digest mismatch",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "line-4/tools/hash-witness/hash_witness.py",
+        "line-4/tools/hash-witness/zto-trace.json",
+        "--expect",
+        "0xbe609aee343fb3c4b28e1df9e632fca64fcfaede20f02e86244efddf30957bd2"
+      ],
+      "cwd": ".",
+      "expectedExit": 1,
+      "actualExit": 1,
+      "passed": true,
+      "stdout": "{\n  \"witnessValid\": true,\n  \"digest\": \"0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774\",\n  \"matchesExpected\": false,\n  \"nodesChecked\": 12,\n  \"hashesChecked\": 7,\n  \"hashInputBytes\": 691,\n  \"sourceTypedDataChecked\": false,\n  \"scope\": \"Trace byte consistency only; compare the witness with the original intended typed data separately.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "detached suite",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        ".",
+        "-v"
+      ],
+      "cwd": "test/scratch/hash-witness/detached",
+      "expectedExit": 0,
+      "actualExit": 0,
+      "passed": true,
+      "stdout": "",
+      "stderr": "test_cli_success_mismatch_and_malformed (test_hash_witness.BoundaryTests.test_cli_success_mismatch_and_malformed) ... ok\ntest_no_network_dependencies (test_hash_witness.BoundaryTests.test_no_network_dependencies) ... ok\ntest_reader_hidden_traversal_symlinks_directory_fifo_size (test_hash_witness.BoundaryTests.test_reader_hidden_traversal_symlinks_directory_fifo_size) ... ok\ntest_reader_regular_and_absolute_inside_workspace (test_hash_witness.BoundaryTests.test_reader_regular_and_absolute_inside_workspace) ... ok\ntest_ethereum_empty_and_abc_vectors (test_hash_witness.HashTests.test_ethereum_empty_and_abc_vectors) ... ok\ntest_hash_requires_bytes (test_hash_witness.HashTests.test_hash_requires_bytes) ... ok\ntest_permutation_and_padding_with_independent_hashlib (test_hash_witness.HashTests.test_permutation_and_padding_with_independent_hashlib) ... ok\ntest_ancestor_match_flag_never_controls_result (test_hash_witness.WitnessTests.test_ancestor_match_flag_never_controls_result) ... ok\ntest_array_order_offsets_lengths_and_child_reuse (test_hash_witness.WitnessTests.test_array_order_offsets_lengths_and_child_reuse) ... ok\ntest_atomic_normalization_and_ranges (test_hash_witness.WitnessTests.test_atomic_normalization_and_ranges) ... ok\ntest_bad_lengths_and_boolean_offsets_rejected (test_hash_witness.WitnessTests.test_bad_lengths_and_boolean_offsets_rejected) ... ok\ntest_child_path_word_type_and_order_rejected (test_hash_witness.WitnessTests.test_child_path_word_type_and_order_rejected) ... ok\ntest_conflicting_dependency_declarations (test_hash_witness.WitnessTests.test_conflicting_dependency_declarations) ... ok\ntest_dynamic_utf8_and_byte_count (test_hash_witness.WitnessTests.test_dynamic_utf8_and_byte_count) ... ok\ntest_empty_nested_recursive_dynamic_and_scalar_edges (test_hash_witness.WitnessTests.test_empty_nested_recursive_dynamic_and_scalar_edges) ... ok\ntest_envelope_and_summary_tampering (test_hash_witness.WitnessTests.test_envelope_and_summary_tampering) ... ok\ntest_every_hash_and_preimage_tampering_rejected (test_hash_witness.WitnessTests.test_every_hash_and_preimage_tampering_rejected) ... ok\ntest_expected_hex_validation (test_hash_witness.WitnessTests.test_expected_hex_validation) ... ok\ntest_fixed_bytes_padding_not_address_padding (test_hash_witness.WitnessTests.test_fixed_bytes_padding_not_address_padding) ... ok\ntest_hash_and_node_limits_fail_closed (test_hash_witness.WitnessTests.test_hash_and_node_limits_fail_closed) ... ok\ntest_historical_zto_trace (test_hash_witness.WitnessTests.test_historical_zto_trace) ... ok\ntest_malformed_json_values_fail_without_type_errors (test_hash_witness.WitnessTests.test_malformed_json_values_fail_without_type_errors) ... ok\ntest_malformed_node_members_never_escape_as_type_errors (test_hash_witness.WitnessTests.test_malformed_node_members_never_escape_as_type_errors) ... ok\ntest_no_input_mutation (test_hash_witness.WitnessTests.test_no_input_mutation) ... ok\ntest_orphan_duplicate_missing_and_forward_nodes (test_hash_witness.WitnessTests.test_orphan_duplicate_missing_and_forward_nodes) ... ok\ntest_published_ether_mail (test_hash_witness.WitnessTests.test_published_ether_mail) ... ok\ntest_raw_json_depth_duplicates_floats_unicode_and_cycles (test_hash_witness.WitnessTests.test_raw_json_depth_duplicates_floats_unicode_and_cycles) ... ok\ntest_schema_dependency_order_unused_missing_and_field_order (test_hash_witness.WitnessTests.test_schema_dependency_order_unused_missing_and_field_order) ... ok\ntest_valid_trace_expected_mismatch (test_hash_witness.WitnessTests.test_valid_trace_expected_mismatch) ... ok\ntest_version_roles_unknown_members_and_root_type (test_hash_witness.WitnessTests.test_version_roles_unknown_members_and_root_type) ... ok\n\n----------------------------------------------------------------------\nRan 30 tests in 3.053s\n\nOK\n"
+    },
+    {
+      "name": "detached ZTO",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "hash_witness.py",
+        "zto-trace.json",
+        "--expect",
+        "0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774"
+      ],
+      "cwd": "test/scratch/hash-witness/detached",
+      "expectedExit": 0,
+      "actualExit": 0,
+      "passed": true,
+      "stdout": "{\n  \"witnessValid\": true,\n  \"digest\": \"0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774\",\n  \"matchesExpected\": true,\n  \"nodesChecked\": 12,\n  \"hashesChecked\": 7,\n  \"hashInputBytes\": 691,\n  \"sourceTypedDataChecked\": false,\n  \"scope\": \"Trace byte consistency only; compare the witness with the original intended typed data separately.\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "name": "newly exported ancestor trace",
+      "command": [
+        "/usr/bin/python3",
+        "-B",
+        "line-4/tools/hash-witness/hash_witness.py",
+        "test/scratch/hash-witness/exported-trace.json",
+        "--expect",
+        "0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774"
+      ],
+      "cwd": ".",
+      "expectedExit": 0,
+      "actualExit": 0,
+      "passed": true,
+      "stdout": "{\n  \"witnessValid\": true,\n  \"digest\": \"0xf33e2506e5c103f98dbfe3feb6d4b87d55f1fad4e423dbaa8462465ff4ab9774\",\n  \"matchesExpected\": true,\n  \"nodesChecked\": 12,\n  \"hashesChecked\": 7,\n  \"hashInputBytes\": 691,\n  \"sourceTypedDataChecked\": false,\n  \"scope\": \"Trace byte consistency only; compare the witness with the original intended typed data separately.\"\n}\n",
+      "stderr": ""
+    }
+  ],
+  "limitations": "Local checks, not independent security audit or proof of intended-source equivalence."
+}
