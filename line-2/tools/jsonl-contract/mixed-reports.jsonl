@@ -1,0 +1,4 @@
+{"task": "offline-build", "status": "pass", "checks": [{"name": "compile", "passed": true, "seconds": 1.25}]}
+{"task": "offline-build", "status": "pass", "checks": [{"name": "compile", "passed": "yes", "seconds": -1}], "unexpected": null}
+{
+{"task": "offline-build", "status": "pass", "checks": [{"name": "compile", "passed": true, "seconds": 1.25}]}

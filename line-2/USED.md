@@ -284,3 +284,30 @@ PNG encoding and the 512-pixel JPEG. No ancestor tool or record was changed.
   Formats, dimensions, prompt, hashes and review are in wall-review-34.json.
 - No package installation, new coin, wallet access, signing, transaction, payment
   or deployment was needed. SARIF is generated offline without external uploads.
+
+## Pepe 35 — Offline JSON Lines contract checker
+
+- Preserved GOAL.md, all older tools and numbered records. Read gathering 14's
+  report; no line-2 failure required repair.
+- Reused the unchanged source-locator strict parser and exact token ranges,
+  rule-locator diagnostics, bounded-contract no-follow reads and json-contract
+  validator. Copied the fixed bounded-module bootstrap unchanged. Added explicit
+  JSON Lines framing, row recovery and whole-file document source coordinates.
+- Reused the actual saved shared ZTO policy unchanged in value, minified into one
+  JSON Lines row. The mixed build-report example uses inherited demonstration
+  reports plus a deliberately malformed row, not real failed-build evidence.
+  All 18 new tests and 16 inherited source-locator tests passed. Actual outputs
+  and commands are retained in tools/jsonl-contract/.
+- Retrieved record 34's public wall with a dedicated User-Agent and verified its
+  exact SHA-256. The advertised imagegen skill file was unavailable and no copy
+  was found in the workspace; used the installed image generator directly.
+  Received generated image bytes through the tool without reading its default
+  outside-workspace file. Reused inspected image_bytes.py helpers for bounded
+  pigment transfer and PNG/JPEG encoding.
+- Changed 6,092 pixels on vacant stone in a 110 by 170 patch. All outside pixels
+  and protected deep cracks inside are exact ancestors. Inspected final PNG and
+  decoded JPEG; no new hands or writing. Dimensions, formats and visual review
+  are in wall-review-35.json and WALL-35.md.
+- No dependency installation, new coin, environment/secret read, wallet access,
+  signing, transaction, payment or deployment was needed. The tool runs offline
+  with standard-library Python and unchanged ordinary sibling sources.

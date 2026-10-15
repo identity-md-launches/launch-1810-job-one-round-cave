@@ -1,0 +1,338 @@
+{
+  "valid": false,
+  "complete": true,
+  "status": "malformed_rows",
+  "summary": {
+    "rows": 4,
+    "passed": 2,
+    "violated": 1,
+    "malformed": 1,
+    "structural_errors": 3
+  },
+  "sources": {
+    "contract": {
+      "file": "line-2/tools/json-contract/report.contract.json",
+      "bytes": 621,
+      "sha256": "42c48ea1ab01acc4270ab878bc8988c4439b5d9fad5c953123b76f44968c4c13"
+    },
+    "document": {
+      "file": "line-2/tools/jsonl-contract/mixed-reports.jsonl",
+      "bytes": 351,
+      "sha256": "f571dcd79d35db8c46a9de4c89ec940e853fc8531799204433e1fa03ea9bdc88"
+    }
+  },
+  "coordinates": {
+    "pointers": "relative to the JSON value on the reported row",
+    "lines": "one-based physical LF-delimited file lines",
+    "columns": "one-based Unicode code points, not display cells or UTF-16",
+    "offsets": "zero-based whole-file UTF-8 bytes and Unicode code points; end exclusive",
+    "row_bytes": "includes CR when present; excludes the LF delimiter",
+    "missing": "missing values anchor the containing object; no invented value token"
+  },
+  "rows": [
+    {
+      "line": 1,
+      "byte_start": 0,
+      "byte_end": 109,
+      "sha256": "c0893029b5c77c95e106bdaafdad0662d27db71b1660624c5c49ec54a372b386",
+      "valid": true,
+      "status": "valid",
+      "errors": []
+    },
+    {
+      "line": 2,
+      "byte_start": 110,
+      "byte_end": 238,
+      "sha256": "9f3ff12a7a91afe81cb52fd020c4bb7d49f99e6eb383100a88c6be5802ce6910",
+      "valid": false,
+      "status": "violations",
+      "errors": [
+        {
+          "path": "/checks/0/passed",
+          "rule": "type",
+          "message": "expected boolean",
+          "contract_path": "/properties/checks/items/properties/passed/type",
+          "constraint": {
+            "present": true,
+            "type": "string",
+            "length": 7,
+            "preview": "\"boolean\"",
+            "truncated": false
+          },
+          "observed": {
+            "present": true,
+            "type": "string",
+            "length": 3,
+            "preview": "\"yes\"",
+            "truncated": false
+          },
+          "document_source": {
+            "file": "line-2/tools/jsonl-contract/mixed-reports.jsonl",
+            "present": true,
+            "value": {
+              "start": {
+                "line": 2,
+                "column": 86,
+                "char_offset": 195,
+                "byte_offset": 195
+              },
+              "end": {
+                "line": 2,
+                "column": 91,
+                "char_offset": 200,
+                "byte_offset": 200
+              }
+            },
+            "key": {
+              "start": {
+                "line": 2,
+                "column": 76,
+                "char_offset": 185,
+                "byte_offset": 185
+              },
+              "end": {
+                "line": 2,
+                "column": 84,
+                "char_offset": 193,
+                "byte_offset": 193
+              }
+            }
+          },
+          "contract_source": {
+            "file": "line-2/tools/json-contract/report.contract.json",
+            "present": true,
+            "value": {
+              "start": {
+                "line": 17,
+                "column": 30,
+                "char_offset": 525,
+                "byte_offset": 525
+              },
+              "end": {
+                "line": 17,
+                "column": 39,
+                "char_offset": 534,
+                "byte_offset": 534
+              }
+            },
+            "key": {
+              "start": {
+                "line": 17,
+                "column": 22,
+                "char_offset": 517,
+                "byte_offset": 517
+              },
+              "end": {
+                "line": 17,
+                "column": 28,
+                "char_offset": 523,
+                "byte_offset": 523
+              }
+            }
+          }
+        },
+        {
+          "path": "/checks/0/seconds",
+          "rule": "minimum",
+          "message": "must respect minimum 0",
+          "contract_path": "/properties/checks/items/properties/seconds/minimum",
+          "constraint": {
+            "present": true,
+            "type": "integer",
+            "preview": "0",
+            "truncated": false
+          },
+          "observed": {
+            "present": true,
+            "type": "integer",
+            "preview": "-1",
+            "truncated": false
+          },
+          "document_source": {
+            "file": "line-2/tools/jsonl-contract/mixed-reports.jsonl",
+            "present": true,
+            "value": {
+              "start": {
+                "line": 2,
+                "column": 104,
+                "char_offset": 213,
+                "byte_offset": 213
+              },
+              "end": {
+                "line": 2,
+                "column": 106,
+                "char_offset": 215,
+                "byte_offset": 215
+              }
+            },
+            "key": {
+              "start": {
+                "line": 2,
+                "column": 93,
+                "char_offset": 202,
+                "byte_offset": 202
+              },
+              "end": {
+                "line": 2,
+                "column": 102,
+                "char_offset": 211,
+                "byte_offset": 211
+              }
+            }
+          },
+          "contract_source": {
+            "file": "line-2/tools/json-contract/report.contract.json",
+            "present": true,
+            "value": {
+              "start": {
+                "line": 18,
+                "column": 52,
+                "char_offset": 588,
+                "byte_offset": 588
+              },
+              "end": {
+                "line": 18,
+                "column": 53,
+                "char_offset": 589,
+                "byte_offset": 589
+              }
+            },
+            "key": {
+              "start": {
+                "line": 18,
+                "column": 41,
+                "char_offset": 577,
+                "byte_offset": 577
+              },
+              "end": {
+                "line": 18,
+                "column": 50,
+                "char_offset": 586,
+                "byte_offset": 586
+              }
+            }
+          }
+        },
+        {
+          "path": "/unexpected",
+          "rule": "additionalProperties",
+          "message": "unexpected property",
+          "contract_path": "/additionalProperties",
+          "constraint": {
+            "present": true,
+            "type": "boolean",
+            "preview": "false",
+            "truncated": false
+          },
+          "observed": {
+            "present": true,
+            "type": "null",
+            "preview": "null",
+            "truncated": false
+          },
+          "document_source": {
+            "file": "line-2/tools/jsonl-contract/mixed-reports.jsonl",
+            "present": true,
+            "value": {
+              "start": {
+                "line": 2,
+                "column": 124,
+                "char_offset": 233,
+                "byte_offset": 233
+              },
+              "end": {
+                "line": 2,
+                "column": 128,
+                "char_offset": 237,
+                "byte_offset": 237
+              }
+            },
+            "key": {
+              "start": {
+                "line": 2,
+                "column": 110,
+                "char_offset": 219,
+                "byte_offset": 219
+              },
+              "end": {
+                "line": 2,
+                "column": 122,
+                "char_offset": 231,
+                "byte_offset": 231
+              }
+            }
+          },
+          "contract_source": {
+            "file": "line-2/tools/json-contract/report.contract.json",
+            "present": true,
+            "value": {
+              "start": {
+                "line": 4,
+                "column": 27,
+                "char_offset": 92,
+                "byte_offset": 92
+              },
+              "end": {
+                "line": 4,
+                "column": 32,
+                "char_offset": 97,
+                "byte_offset": 97
+              }
+            },
+            "key": {
+              "start": {
+                "line": 4,
+                "column": 3,
+                "char_offset": 68,
+                "byte_offset": 68
+              },
+              "end": {
+                "line": 4,
+                "column": 25,
+                "char_offset": 90,
+                "byte_offset": 90
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "line": 3,
+      "byte_start": 239,
+      "byte_end": 240,
+      "sha256": "021fb596db81e6d02bf3d2586ee3981fe519f275c0ac9ca76bbcf2ebb4097d96",
+      "valid": false,
+      "status": "malformed",
+      "errors": [],
+      "parse_error": {
+        "message": "Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+        "kind": "syntax_point",
+        "file": "line-2/tools/jsonl-contract/mixed-reports.jsonl",
+        "span": {
+          "start": {
+            "line": 3,
+            "column": 2,
+            "byte_offset": 240,
+            "char_offset": 240
+          },
+          "end": {
+            "line": 3,
+            "column": 2,
+            "byte_offset": 240,
+            "char_offset": 240
+          }
+        }
+      }
+    },
+    {
+      "line": 4,
+      "byte_start": 241,
+      "byte_end": 350,
+      "sha256": "c0893029b5c77c95e106bdaafdad0662d27db71b1660624c5c49ec54a372b386",
+      "valid": true,
+      "status": "valid",
+      "errors": []
+    }
+  ]
+}

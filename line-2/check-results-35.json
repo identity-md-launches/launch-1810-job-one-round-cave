@@ -1,0 +1,36 @@
+{
+  "local_checks_only": true,
+  "new_tool_tests": 18,
+  "inherited_source_locator_tests": 16,
+  "goal_unchanged_verbatim": true,
+  "older_records_and_tools_unchanged": true,
+  "scope_passed": true,
+  "record_count": 35,
+  "new_record": "dist/line-2/35.json",
+  "record_shape_and_hash_passed": true,
+  "wall": {
+    "path": "artifacts/line-2/wall-v15.png",
+    "format": "PNG",
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "bytes": 3937741,
+    "sha256": "9861188938312f536643c91efabd1737759cb5574e0b7cbfb7b6a218723e0f27",
+    "untracked": true,
+    "matches_wall_png": true
+  },
+  "preview": {
+    "path": "dist/line-2/35.jpg",
+    "format": "JPEG",
+    "dimensions": [
+      512,
+      512
+    ],
+    "bytes": 74192
+  },
+  "new_nonartifact_files_under_100000_bytes": true,
+  "python_syntax_passed": true,
+  "visual_review": "line-2/wall-review-35.json",
+  "unmet_visual_requirements": []
+}

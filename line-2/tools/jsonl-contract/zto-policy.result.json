@@ -1,0 +1,43 @@
+{
+  "valid": true,
+  "complete": true,
+  "status": "valid",
+  "summary": {
+    "rows": 1,
+    "passed": 1,
+    "violated": 0,
+    "malformed": 0,
+    "structural_errors": 0
+  },
+  "sources": {
+    "contract": {
+      "file": "shared/payment-evidence/policy.contract.json",
+      "bytes": 705,
+      "sha256": "9a8fb8297b152df3532caabf62af9c3ea316e5f51fbdbd96dbb0950a09dca47b"
+    },
+    "document": {
+      "file": "line-2/tools/jsonl-contract/zto-policy.jsonl",
+      "bytes": 224,
+      "sha256": "299d7d394a39370a3ee31bb45f5b5be0c32bf1107962a55da21f3780ff716445"
+    }
+  },
+  "coordinates": {
+    "pointers": "relative to the JSON value on the reported row",
+    "lines": "one-based physical LF-delimited file lines",
+    "columns": "one-based Unicode code points, not display cells or UTF-16",
+    "offsets": "zero-based whole-file UTF-8 bytes and Unicode code points; end exclusive",
+    "row_bytes": "includes CR when present; excludes the LF delimiter",
+    "missing": "missing values anchor the containing object; no invented value token"
+  },
+  "rows": [
+    {
+      "line": 1,
+      "byte_start": 0,
+      "byte_end": 223,
+      "sha256": "da33ae876871de4e8492f6bfbae8d623aa89b2bb83cc885a7f423c4d4941c096",
+      "valid": true,
+      "status": "valid",
+      "errors": []
+    }
+  ]
+}

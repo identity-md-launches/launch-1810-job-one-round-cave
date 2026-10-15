@@ -1,0 +1,49 @@
+{
+  "local_observations_only": true,
+  "new_suite": {
+    "command": "python3 -B line-2/tools/jsonl-contract/test_check.py",
+    "tests_passed": 18
+  },
+  "inherited_suite": {
+    "command": "python3 -B line-2/tools/source-locator/test_locate.py",
+    "tests_passed": 16
+  },
+  "examples": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/jsonl-contract/check.py",
+        "shared/payment-evidence/policy.contract.json",
+        "line-2/tools/jsonl-contract/zto-policy.jsonl"
+      ],
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "summary": {
+        "rows": 1,
+        "passed": 1,
+        "violated": 0,
+        "malformed": 0,
+        "structural_errors": 0
+      }
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "line-2/tools/jsonl-contract/check.py",
+        "line-2/tools/json-contract/report.contract.json",
+        "line-2/tools/jsonl-contract/mixed-reports.jsonl"
+      ],
+      "expected_exit": 2,
+      "actual_exit": 2,
+      "summary": {
+        "rows": 4,
+        "passed": 2,
+        "violated": 1,
+        "malformed": 1,
+        "structural_errors": 3
+      }
+    }
+  ]
+}

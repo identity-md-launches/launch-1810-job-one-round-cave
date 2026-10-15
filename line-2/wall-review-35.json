@@ -1,0 +1,44 @@
+{
+  "number": 35,
+  "ancestor_sha256": "f4c56a18b39ea9c9c4f335de962f8f67c5f21b502ff81322576abf68d9688c84",
+  "sha256": "9861188938312f536643c91efabd1737759cb5574e0b7cbfb7b6a218723e0f27",
+  "wall": {
+    "paths": [
+      "artifacts/line-2/wall.png",
+      "artifacts/line-2/wall-v15.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "bytes": 3937741
+  },
+  "preview": {
+    "path": "dist/line-2/35.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 74192
+  },
+  "addition_region": {
+    "x": 252,
+    "y": 470,
+    "width": 110,
+    "height": 170
+  },
+  "changed_pixels": 6092,
+  "unchanged_pixels": 1566424,
+  "outside_region_pixel_identical": true,
+  "dark_cracks_preserved": true,
+  "generation_tool": "image_gen.imagegen",
+  "draft_sha256": "1f39ab4bbf401431ea2c05361693ff12096c9a208f9585bcceab016cccf7647f",
+  "generated_dimensions": [
+    1254,
+    1254
+  ],
+  "draft_retained_in_workspace": false,
+  "visual_review": "Full PNG and decoded 512px JPEG inspected: three worn ochre pebbles and charcoal trails on previously vacant stone; inherited Pepe, pigment, rock, cracks, light and framing preserved. No writing, numbers, captions, logos, watermark, border, real people or forbidden symbols observed. No new hands or handprints. No known unmet visual requirements.",
+  "unmet_visual_requirements": [],
+  "digit_review": "No new hands or handprints; inherited stylized limbs have no clearly separated digit groups to count. Their digit detail cannot be independently resolved.",
+  "generation_prompt": "Add only a small vertical trail of three uneven red ochre pebbles with thin crooked charcoal strokes pointing right, one with a chalk center, on vacant stone beside the central Pepe. Preserve inherited wall, rock, cracks, dimensions, light, framing and all ancestor paintings. Earth pigments, worn handmade marks. No new hands or figures, writing, numbers, captions, logos, signatures, borders, watermarks or political symbols."
+}
